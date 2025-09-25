@@ -1,0 +1,21 @@
+services:
+  app:
+    user: root
+    command: >
+      sh -lc '
+        mkdir -p /app/.next /app/node_modules &&
+        chown -R node:node /app &&
+        su node -s /bin/sh -c "npm ci && npm run dev"
+      '
+    environment:
+      NODE_ENV: development
+      TZ: Asia/Jakarta
+      CHOKIDAR_USEPOLLING: "1"
+      WATCHPACK_POLLING: "true"
+    volumes:
+      - .:/app:Z
+      - ./data:/app/data:Z
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - "8080:3000"

@@ -1,0 +1,22 @@
+[
+  {
+    "username": "octadimas@gmail.com",
+    "role": "admin",
+    "passhash": "scrypt:r2GVRLyRJswLLVlZtS-nKQ:M8b3Zbbjgv9XcLeCR4on93NUltPbrVRaPYkf-QnGitBNYdvxr_3-nv4Knsv1fmon7xG5CDx22gDC3eN7xZrMwQ"
+  },
+  {
+    "username": "octdino@gmail.com",
+    "role": "admin",
+    "passhash": "scrypt:5YeQwEz0w569oLfN_AJpiw:yYx3oVTVGomS6X_rB7IC8aHBvTuyKS4M4ihgvWdt5V2kIf2rWrelAltMRmSj9uiOFsDfsw7m93yMwIijW-5EpA"
+  },
+  {
+    "username": "fadli@difotoin.id",
+    "role": "viewer",
+    "passhash": "scrypt:ySvLSWDXtvf4XzQQQWVFqw:lhcjer7k85inOaf2H7ATxg_QnBxRRW7zMLxuNCWyHCH2PepPPi54FtKVLfE9N9oQJpY6TWv3ENbXiqk9x4APsQ"
+  },
+  {
+    "username": "suci@difotoin.id",
+    "role": "viewer",
+    "passhash": "scrypt:1ZnUt1N4ysUscbuZi3NNMA:bxlQyYDIw3LM5eU8tIxHwcUtpAWYyodZX207DaPcy7TpZ2rPW1AqRCK4nMAUYI63IgvjzE2WArdwgNZ9BZ6F6Q"
+  }
+]

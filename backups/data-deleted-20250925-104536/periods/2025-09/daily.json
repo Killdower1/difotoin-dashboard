@@ -1,0 +1,5516 @@
+{
+  "Taman Literasi Jakarta": [
+    {
+      "date": "2025-08-31",
+      "foto": 1,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 22,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 54,
+      "unlock": 5,
+      "print": 4
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 56,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 37,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 129,
+      "unlock": 19,
+      "print": 19
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 121,
+      "unlock": 15,
+      "print": 15
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 108,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 45,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 33,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 54,
+      "unlock": 4,
+      "print": 5
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 51,
+      "unlock": 10,
+      "print": 9
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 45,
+      "unlock": 9,
+      "print": 19
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 145,
+      "unlock": 33,
+      "print": 33
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 96,
+      "unlock": 12,
+      "print": 12
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 46,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 55,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 74,
+      "unlock": 5,
+      "print": 6
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 60,
+      "unlock": 5,
+      "print": 4
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 114,
+      "unlock": 15,
+      "print": 15
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 139,
+      "unlock": 19,
+      "print": 19
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 81,
+      "unlock": 10,
+      "print": 9
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 51,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 48,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 31,
+      "unlock": 3,
+      "print": 4
+    }
+  ],
+  "Kembali Ke Alam Puncak": [
+    {
+      "date": "2025-08-31",
+      "foto": 27,
+      "unlock": 1,
+      "print": 2
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 69,
+      "unlock": 16,
+      "print": 17
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 90,
+      "unlock": 22,
+      "print": 22
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 100,
+      "unlock": 28,
+      "print": 31
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 142,
+      "unlock": 33,
+      "print": 34
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 109,
+      "unlock": 25,
+      "print": 30
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 178,
+      "unlock": 39,
+      "print": 40
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 110,
+      "unlock": 26,
+      "print": 29
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 60,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 113,
+      "unlock": 17,
+      "print": 17
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 118,
+      "unlock": 26,
+      "print": 27
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 128,
+      "unlock": 34,
+      "print": 35
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 179,
+      "unlock": 43,
+      "print": 49
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 136,
+      "unlock": 26,
+      "print": 30
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 97,
+      "unlock": 25,
+      "print": 26
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 98,
+      "unlock": 15,
+      "print": 16
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 64,
+      "unlock": 12,
+      "print": 12
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 103,
+      "unlock": 22,
+      "print": 26
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 145,
+      "unlock": 32,
+      "print": 33
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 158,
+      "unlock": 33,
+      "print": 36
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 180,
+      "unlock": 46,
+      "print": 50
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 83,
+      "unlock": 17,
+      "print": 20
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 103,
+      "unlock": 14,
+      "print": 15
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 64,
+      "unlock": 13,
+      "print": 15
+    }
+  ],
+  "Kuwa Koffie x Mulih Ka Uwa": [
+    {
+      "date": "2025-08-31",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 44,
+      "unlock": 5,
+      "print": 6
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 11,
+      "unlock": 6,
+      "print": 7
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 32,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 62,
+      "unlock": 9,
+      "print": 10
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 130,
+      "unlock": 17,
+      "print": 18
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 105,
+      "unlock": 18,
+      "print": 19
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 80,
+      "unlock": 8,
+      "print": 9
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 24,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 16,
+      "unlock": 1,
+      "print": 0
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 28,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 12,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 57,
+      "unlock": 6,
+      "print": 7
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 67,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 49,
+      "unlock": 4,
+      "print": 5
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 44,
+      "unlock": 8,
+      "print": 6
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 26,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 5,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 21,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 37,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 40,
+      "unlock": 7,
+      "print": 6
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 39,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 35,
+      "unlock": 7,
+      "print": 7
+    }
+  ],
+  "Buy Local Creative Zone by JXB": [
+    {
+      "date": "2025-09-09",
+      "foto": 17,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 37,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 48,
+      "unlock": 5,
+      "print": 4
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 27,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 60,
+      "unlock": 5,
+      "print": 2
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 98,
+      "unlock": 17,
+      "print": 17
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 29,
+      "unlock": 4,
+      "print": 5
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 33,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 37,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 28,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 30,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 36,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 42,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 16,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 57,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 12,
+      "unlock": 2,
+      "print": 2
+    }
+  ],
+  "Omman Kopi Temanggung - Tugu Jogja": [
+    {
+      "date": "2025-09-12",
+      "foto": 18,
+      "unlock": 2,
+      "print": 3
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 25,
+      "unlock": 8,
+      "print": 10
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 14,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 10,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 10,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 17,
+      "unlock": 6,
+      "print": 7
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 19,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 35,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 23,
+      "unlock": 8,
+      "print": 6
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 38,
+      "unlock": 13,
+      "print": 15
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 53,
+      "unlock": 27,
+      "print": 29
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 53,
+      "unlock": 31,
+      "print": 38
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 33,
+      "unlock": 19,
+      "print": 20
+    }
+  ],
+  "Taman Lapangan Banteng": [
+    {
+      "date": "2025-08-31",
+      "foto": 4,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 81,
+      "unlock": 3,
+      "print": 5
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 91,
+      "unlock": 8,
+      "print": 7
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 82,
+      "unlock": 7,
+      "print": 6
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 71,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 239,
+      "unlock": 41,
+      "print": 41
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 203,
+      "unlock": 40,
+      "print": 43
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 208,
+      "unlock": 32,
+      "print": 31
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 114,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 57,
+      "unlock": 8,
+      "print": 9
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 111,
+      "unlock": 5,
+      "print": 7
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 67,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 69,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 232,
+      "unlock": 35,
+      "print": 35
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 206,
+      "unlock": 16,
+      "print": 16
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 87,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 72,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 41,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 94,
+      "unlock": 13,
+      "print": 13
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 137,
+      "unlock": 17,
+      "print": 17
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 249,
+      "unlock": 33,
+      "print": 33
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 192,
+      "unlock": 21,
+      "print": 25
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 64,
+      "unlock": 2,
+      "print": 1
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 35,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 61,
+      "unlock": 4,
+      "print": 5
+    }
+  ],
+  "Batavia PIK": [
+    {
+      "date": "2025-08-31",
+      "foto": 7,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 35,
+      "unlock": 5,
+      "print": 6
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 34,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 35,
+      "unlock": 6,
+      "print": 7
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 46,
+      "unlock": 7,
+      "print": 9
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 103,
+      "unlock": 29,
+      "print": 29
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 95,
+      "unlock": 17,
+      "print": 20
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 68,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 32,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 45,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 26,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 51,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 26,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 90,
+      "unlock": 13,
+      "print": 13
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 80,
+      "unlock": 13,
+      "print": 15
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 28,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 34,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 24,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 31,
+      "unlock": 2,
+      "print": 1
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 44,
+      "unlock": 12,
+      "print": 13
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 98,
+      "unlock": 14,
+      "print": 14
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 75,
+      "unlock": 12,
+      "print": 12
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 35,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 27,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 32,
+      "unlock": 3,
+      "print": 4
+    }
+  ],
+  "Mall Bali Icon": [
+    {
+      "date": "2025-08-31",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 70,
+      "unlock": 11,
+      "print": 11
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 70,
+      "unlock": 21,
+      "print": 21
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 69,
+      "unlock": 15,
+      "print": 18
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 75,
+      "unlock": 18,
+      "print": 20
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 92,
+      "unlock": 27,
+      "print": 29
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 70,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 93,
+      "unlock": 15,
+      "print": 15
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 77,
+      "unlock": 11,
+      "print": 11
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 26,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 75,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 51,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 56,
+      "unlock": 15,
+      "print": 15
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 96,
+      "unlock": 23,
+      "print": 24
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 78,
+      "unlock": 21,
+      "print": 21
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 66,
+      "unlock": 14,
+      "print": 15
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 64,
+      "unlock": 14,
+      "print": 15
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 45,
+      "unlock": 4,
+      "print": 3
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 45,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 44,
+      "unlock": 9,
+      "print": 10
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 86,
+      "unlock": 20,
+      "print": 17
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 52,
+      "unlock": 8,
+      "print": 9
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 54,
+      "unlock": 17,
+      "print": 18
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 69,
+      "unlock": 11,
+      "print": 13
+    }
+  ],
+  "Sarinah Kolam": [
+    {
+      "date": "2025-09-01",
+      "foto": 34,
+      "unlock": 11,
+      "print": 13
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 7,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 10,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 24,
+      "unlock": 9,
+      "print": 11
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 65,
+      "unlock": 24,
+      "print": 26
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 42,
+      "unlock": 12,
+      "print": 12
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 52,
+      "unlock": 29,
+      "print": 29
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 34,
+      "unlock": 11,
+      "print": 10
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 24,
+      "unlock": 12,
+      "print": 13
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 28,
+      "unlock": 15,
+      "print": 12
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 10,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 39,
+      "unlock": 12,
+      "print": 14
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 63,
+      "unlock": 28,
+      "print": 30
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 80,
+      "unlock": 33,
+      "print": 33
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 18,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 12,
+      "unlock": 6,
+      "print": 5
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 18,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 19,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 32,
+      "unlock": 14,
+      "print": 16
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 74,
+      "unlock": 21,
+      "print": 19
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 56,
+      "unlock": 20,
+      "print": 22
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 23,
+      "unlock": 5,
+      "print": 3
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 32,
+      "unlock": 11,
+      "print": 9
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 14,
+      "unlock": 7,
+      "print": 9
+    }
+  ],
+  "Widi Coffee": [
+    {
+      "date": "2025-09-01",
+      "foto": 16,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 24,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 21,
+      "unlock": 4,
+      "print": 7
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 3,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 12,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 14,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 7,
+      "unlock": 3,
+      "print": 5
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 19,
+      "unlock": 10,
+      "print": 10
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 27,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 28,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 11,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 9,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 9,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 10,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 6,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 3,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 12,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 21,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 9,
+      "unlock": 0,
+      "print": 0
+    }
+  ],
+  "Carnavelo Velodrome": [
+    {
+      "date": "2025-08-31",
+      "foto": 6,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 28,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 59,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 52,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 67,
+      "unlock": 14,
+      "print": 14
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 114,
+      "unlock": 24,
+      "print": 24
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 128,
+      "unlock": 25,
+      "print": 27
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 87,
+      "unlock": 25,
+      "print": 25
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 63,
+      "unlock": 10,
+      "print": 10
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 37,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 48,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 38,
+      "unlock": 5,
+      "print": 6
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 31,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 64,
+      "unlock": 18,
+      "print": 19
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 85,
+      "unlock": 17,
+      "print": 18
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 22,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 27,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 60,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 71,
+      "unlock": 14,
+      "print": 14
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 89,
+      "unlock": 26,
+      "print": 28
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 71,
+      "unlock": 13,
+      "print": 16
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 57,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 20,
+      "unlock": 2,
+      "print": 2
+    }
+  ],
+  "Beachwalk Mall Kuta - Gate": [
+    {
+      "date": "2025-08-31",
+      "foto": 3,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 53,
+      "unlock": 8,
+      "print": 9
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 65,
+      "unlock": 11,
+      "print": 11
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 61,
+      "unlock": 13,
+      "print": 14
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 67,
+      "unlock": 16,
+      "print": 17
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 86,
+      "unlock": 32,
+      "print": 36
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 79,
+      "unlock": 22,
+      "print": 22
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 88,
+      "unlock": 25,
+      "print": 27
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 64,
+      "unlock": 9,
+      "print": 10
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 55,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 33,
+      "unlock": 5,
+      "print": 4
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 62,
+      "unlock": 10,
+      "print": 12
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 47,
+      "unlock": 9,
+      "print": 10
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 65,
+      "unlock": 23,
+      "print": 31
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 80,
+      "unlock": 17,
+      "print": 19
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 69,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 66,
+      "unlock": 16,
+      "print": 19
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 68,
+      "unlock": 10,
+      "print": 10
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 57,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 53,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 78,
+      "unlock": 14,
+      "print": 14
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 52,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 70,
+      "unlock": 14,
+      "print": 14
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 55,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 43,
+      "unlock": 12,
+      "print": 11
+    }
+  ],
+  "Flavor Bliss & Broadway Alam Sutera": [
+    {
+      "date": "2025-09-01",
+      "foto": 30,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 23,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 25,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 30,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 78,
+      "unlock": 18,
+      "print": 22
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 45,
+      "unlock": 12,
+      "print": 13
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 61,
+      "unlock": 19,
+      "print": 24
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 19,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 14,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 17,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 15,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 15,
+      "unlock": 6,
+      "print": 7
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 82,
+      "unlock": 13,
+      "print": 16
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 46,
+      "unlock": 11,
+      "print": 15
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 13,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 14,
+      "unlock": 3,
+      "print": 6
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 37,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 15,
+      "unlock": 5,
+      "print": 4
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 25,
+      "unlock": 5,
+      "print": 7
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 63,
+      "unlock": 10,
+      "print": 13
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 40,
+      "unlock": 6,
+      "print": 7
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 12,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 19,
+      "unlock": 1,
+      "print": 1
+    }
+  ],
+  "Teras Samarinda": [
+    {
+      "date": "2025-08-31",
+      "foto": 14,
+      "unlock": 4,
+      "print": 7
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 127,
+      "unlock": 26,
+      "print": 27
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 115,
+      "unlock": 29,
+      "print": 32
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 115,
+      "unlock": 26,
+      "print": 27
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 166,
+      "unlock": 35,
+      "print": 36
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 137,
+      "unlock": 54,
+      "print": 55
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 207,
+      "unlock": 71,
+      "print": 75
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 176,
+      "unlock": 50,
+      "print": 62
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 137,
+      "unlock": 42,
+      "print": 41
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 7,
+      "unlock": 1,
+      "print": 0
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 93,
+      "unlock": 32,
+      "print": 33
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 103,
+      "unlock": 31,
+      "print": 31
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 131,
+      "unlock": 44,
+      "print": 45
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 126,
+      "unlock": 41,
+      "print": 45
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 199,
+      "unlock": 46,
+      "print": 48
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 126,
+      "unlock": 33,
+      "print": 31
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 75,
+      "unlock": 13,
+      "print": 14
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 125,
+      "unlock": 32,
+      "print": 32
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 111,
+      "unlock": 28,
+      "print": 31
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 90,
+      "unlock": 15,
+      "print": 15
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 162,
+      "unlock": 64,
+      "print": 67
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 143,
+      "unlock": 43,
+      "print": 44
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 104,
+      "unlock": 17,
+      "print": 17
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 132,
+      "unlock": 35,
+      "print": 36
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 94,
+      "unlock": 20,
+      "print": 21
+    }
+  ],
+  "Discovery Mall Icon": [
+    {
+      "date": "2025-08-31",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 52,
+      "unlock": 12,
+      "print": 13
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 64,
+      "unlock": 19,
+      "print": 27
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 36,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 78,
+      "unlock": 13,
+      "print": 15
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 60,
+      "unlock": 14,
+      "print": 17
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 59,
+      "unlock": 14,
+      "print": 16
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 73,
+      "unlock": 26,
+      "print": 34
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 51,
+      "unlock": 16,
+      "print": 16
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 55,
+      "unlock": 7,
+      "print": 9
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 25,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 22,
+      "unlock": 9,
+      "print": 12
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 37,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 50,
+      "unlock": 13,
+      "print": 14
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 32,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 35,
+      "unlock": 13,
+      "print": 12
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 31,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 24,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 44,
+      "unlock": 6,
+      "print": 5
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 30,
+      "unlock": 3,
+      "print": 4
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 38,
+      "unlock": 6,
+      "print": 0
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 36,
+      "unlock": 6,
+      "print": 0
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 19,
+      "unlock": 1,
+      "print": 0
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 21,
+      "unlock": 3,
+      "print": 0
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 16,
+      "unlock": 2,
+      "print": 0
+    }
+  ],
+  "Taman Ismail Marzuki": [
+    {
+      "date": "2025-09-01",
+      "foto": 29,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 31,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 27,
+      "unlock": 4,
+      "print": 5
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 48,
+      "unlock": 8,
+      "print": 9
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 96,
+      "unlock": 17,
+      "print": 18
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 101,
+      "unlock": 30,
+      "print": 36
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 104,
+      "unlock": 27,
+      "print": 23
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 28,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 20,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 41,
+      "unlock": 10,
+      "print": 9
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 36,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 56,
+      "unlock": 12,
+      "print": 12
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 108,
+      "unlock": 18,
+      "print": 17
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 85,
+      "unlock": 15,
+      "print": 16
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 35,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 38,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 43,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 62,
+      "unlock": 11,
+      "print": 12
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 77,
+      "unlock": 7,
+      "print": 6
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 121,
+      "unlock": 31,
+      "print": 35
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 106,
+      "unlock": 31,
+      "print": 30
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 40,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 30,
+      "unlock": 6,
+      "print": 5
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 65,
+      "unlock": 16,
+      "print": 17
+    }
+  ],
+  "Senayan Park": [
+    {
+      "date": "2025-09-01",
+      "foto": 13,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 22,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 17,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 29,
+      "unlock": 3,
+      "print": 1
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 64,
+      "unlock": 11,
+      "print": 11
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 63,
+      "unlock": 16,
+      "print": 16
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 76,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 17,
+      "unlock": 2,
+      "print": 3
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 9,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 27,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 13,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 25,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 68,
+      "unlock": 15,
+      "print": 18
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 69,
+      "unlock": 15,
+      "print": 18
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 16,
+      "unlock": 4,
+      "print": 3
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 9,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 15,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 20,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 21,
+      "unlock": 7,
+      "print": 6
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 89,
+      "unlock": 14,
+      "print": 18
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 57,
+      "unlock": 17,
+      "print": 21
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 19,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 9,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 17,
+      "unlock": 1,
+      "print": 1
+    }
+  ],
+  "Lenovo MRT Bund. HI": [
+    {
+      "date": "2025-09-07",
+      "foto": 21,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 25,
+      "unlock": 21,
+      "print": 21
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 22,
+      "unlock": 22,
+      "print": 22
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 53,
+      "unlock": 54,
+      "print": 54
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 37,
+      "unlock": 38,
+      "print": 38
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 33,
+      "unlock": 32,
+      "print": 32
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 61,
+      "unlock": 68,
+      "print": 68
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 91,
+      "unlock": 77,
+      "print": 77
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 32,
+      "unlock": 34,
+      "print": 34
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 62,
+      "unlock": 59,
+      "print": 59
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 73,
+      "unlock": 69,
+      "print": 69
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 19,
+      "unlock": 12,
+      "print": 12
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 111,
+      "unlock": 118,
+      "print": 118
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 48,
+      "unlock": 48,
+      "print": 48
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 67,
+      "unlock": 74,
+      "print": 74
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 32,
+      "unlock": 31,
+      "print": 31
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 17,
+      "unlock": 15,
+      "print": 15
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 30,
+      "unlock": 30,
+      "print": 30
+    }
+  ],
+  "Aeon Deltamas - Entrance": [
+    {
+      "date": "2025-09-01",
+      "foto": 46,
+      "unlock": 10,
+      "print": 10
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 9,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 6,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 4,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 3,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 6,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 91,
+      "unlock": 12,
+      "print": 10
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 91,
+      "unlock": 9,
+      "print": 11
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 35,
+      "unlock": 7,
+      "print": 4
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 29,
+      "unlock": 5,
+      "print": 2
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 50,
+      "unlock": 10,
+      "print": 12
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 43,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 50,
+      "unlock": 8,
+      "print": 9
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 97,
+      "unlock": 10,
+      "print": 12
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 91,
+      "unlock": 11,
+      "print": 11
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 43,
+      "unlock": 4,
+      "print": 6
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 38,
+      "unlock": 10,
+      "print": 10
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 24,
+      "unlock": 2,
+      "print": 2
+    }
+  ],
+  "Ancol LB 2": [
+    {
+      "date": "2025-09-01",
+      "foto": 43,
+      "unlock": 6,
+      "print": 9
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 54,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 78,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 53,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 120,
+      "unlock": 27,
+      "print": 31
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 91,
+      "unlock": 23,
+      "print": 23
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 80,
+      "unlock": 12,
+      "print": 11
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 40,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 69,
+      "unlock": 12,
+      "print": 13
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 31,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 45,
+      "unlock": 9,
+      "print": 12
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 30,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 108,
+      "unlock": 20,
+      "print": 24
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 81,
+      "unlock": 9,
+      "print": 8
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 20,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 68,
+      "unlock": 7,
+      "print": 10
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 57,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 94,
+      "unlock": 8,
+      "print": 9
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 43,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 111,
+      "unlock": 20,
+      "print": 22
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 76,
+      "unlock": 20,
+      "print": 19
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 32,
+      "unlock": 8,
+      "print": 12
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 35,
+      "unlock": 2,
+      "print": 3
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 63,
+      "unlock": 9,
+      "print": 9
+    }
+  ],
+  "Sarinah Dewata": [
+    {
+      "date": "2025-09-01",
+      "foto": 17,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 27,
+      "unlock": 2,
+      "print": 0
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 22,
+      "unlock": 3,
+      "print": 2
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 27,
+      "unlock": 13,
+      "print": 14
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 58,
+      "unlock": 25,
+      "print": 27
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 53,
+      "unlock": 23,
+      "print": 25
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 49,
+      "unlock": 13,
+      "print": 14
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 11,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 8,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 29,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 28,
+      "unlock": 10,
+      "print": 8
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 27,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 68,
+      "unlock": 26,
+      "print": 24
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 82,
+      "unlock": 16,
+      "print": 16
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 22,
+      "unlock": 3,
+      "print": 4
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 17,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 14,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 22,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 30,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 75,
+      "unlock": 25,
+      "print": 28
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 56,
+      "unlock": 21,
+      "print": 23
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 10,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 18,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 23,
+      "unlock": 3,
+      "print": 3
+    }
+  ],
+  "Aloha - PIK 2": [
+    {
+      "date": "2025-09-01",
+      "foto": 67,
+      "unlock": 21,
+      "print": 21
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 61,
+      "unlock": 14,
+      "print": 15
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 67,
+      "unlock": 11,
+      "print": 12
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 78,
+      "unlock": 17,
+      "print": 15
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 133,
+      "unlock": 63,
+      "print": 67
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 147,
+      "unlock": 52,
+      "print": 58
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 135,
+      "unlock": 52,
+      "print": 56
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 54,
+      "unlock": 10,
+      "print": 9
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 53,
+      "unlock": 12,
+      "print": 14
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 76,
+      "unlock": 16,
+      "print": 17
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 55,
+      "unlock": 10,
+      "print": 10
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 62,
+      "unlock": 22,
+      "print": 24
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 143,
+      "unlock": 50,
+      "print": 57
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 136,
+      "unlock": 43,
+      "print": 43
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 69,
+      "unlock": 20,
+      "print": 20
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 70,
+      "unlock": 16,
+      "print": 18
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 67,
+      "unlock": 20,
+      "print": 20
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 72,
+      "unlock": 23,
+      "print": 28
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 79,
+      "unlock": 26,
+      "print": 29
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 75,
+      "unlock": 15,
+      "print": 18
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 134,
+      "unlock": 37,
+      "print": 41
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 56,
+      "unlock": 14,
+      "print": 18
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 26,
+      "unlock": 5,
+      "print": 6
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 61,
+      "unlock": 17,
+      "print": 16
+    }
+  ],
+  "Sacra | Stuja Ubud": [
+    {
+      "date": "2025-09-12",
+      "foto": 30,
+      "unlock": 11,
+      "print": 11
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 17,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 31,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 38,
+      "unlock": 6,
+      "print": 5
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 17,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 22,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 14,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 19,
+      "unlock": 7,
+      "print": 6
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 25,
+      "unlock": 8,
+      "print": 10
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 39,
+      "unlock": 10,
+      "print": 10
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 39,
+      "unlock": 10,
+      "print": 10
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 17,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 11,
+      "unlock": 2,
+      "print": 2
+    }
+  ],
+  "Zonablu x Gofit": [
+    {
+      "date": "2025-09-01",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 18,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 8,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 15,
+      "unlock": 7,
+      "print": 6
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 22,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 17,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 54,
+      "unlock": 21,
+      "print": 25
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 23,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 21,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 44,
+      "unlock": 18,
+      "print": 17
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 50,
+      "unlock": 29,
+      "print": 30
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 81,
+      "unlock": 38,
+      "print": 42
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 75,
+      "unlock": 26,
+      "print": 29
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 36,
+      "unlock": 10,
+      "print": 9
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 40,
+      "unlock": 15,
+      "print": 20
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 18,
+      "unlock": 4,
+      "print": 5
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 42,
+      "unlock": 11,
+      "print": 12
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 79,
+      "unlock": 30,
+      "print": 32
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 94,
+      "unlock": 45,
+      "print": 46
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 102,
+      "unlock": 29,
+      "print": 32
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 51,
+      "unlock": 13,
+      "print": 12
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 33,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 32,
+      "unlock": 9,
+      "print": 9
+    }
+  ],
+  "Kopi Daong - Hutan Pinus": [
+    {
+      "date": "2025-09-01",
+      "foto": 25,
+      "unlock": 6,
+      "print": 0
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 11,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 19,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 16,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 74,
+      "unlock": 36,
+      "print": 43
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 85,
+      "unlock": 32,
+      "print": 33
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 104,
+      "unlock": 21,
+      "print": 18
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 31,
+      "unlock": 9,
+      "print": 10
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 13,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 34,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 20,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 22,
+      "unlock": 9,
+      "print": 10
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 54,
+      "unlock": 16,
+      "print": 19
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 71,
+      "unlock": 24,
+      "print": 43
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 14,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 29,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 28,
+      "unlock": 5,
+      "print": 8
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 20,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 15,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 63,
+      "unlock": 14,
+      "print": 17
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 100,
+      "unlock": 25,
+      "print": 29
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 20,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 31,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 12,
+      "unlock": 1,
+      "print": 1
+    }
+  ],
+  "HeHa Waterfall": [
+    {
+      "date": "2025-09-01",
+      "foto": 26,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 27,
+      "unlock": 3,
+      "print": 2
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 18,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 23,
+      "unlock": 5,
+      "print": 6
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 42,
+      "unlock": 12,
+      "print": 12
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 54,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 37,
+      "unlock": 15,
+      "print": 20
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 15,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 14,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 16,
+      "unlock": 1,
+      "print": 3
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 23,
+      "unlock": 3,
+      "print": 2
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 29,
+      "unlock": 5,
+      "print": 7
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 52,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 53,
+      "unlock": 11,
+      "print": 12
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 34,
+      "unlock": 7,
+      "print": 5
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 28,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 17,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 42,
+      "unlock": 13,
+      "print": 15
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 21,
+      "unlock": 11,
+      "print": 12
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 46,
+      "unlock": 9,
+      "print": 11
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 56,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 30,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 32,
+      "unlock": 6,
+      "print": 8
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 20,
+      "unlock": 1,
+      "print": 1
+    }
+  ],
+  "Kayumanis Seaside Sanur": [
+    {
+      "date": "2025-08-31",
+      "foto": 3,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 38,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 52,
+      "unlock": 11,
+      "print": 11
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 51,
+      "unlock": 7,
+      "print": 9
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 46,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 77,
+      "unlock": 19,
+      "print": 21
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 77,
+      "unlock": 18,
+      "print": 22
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 83,
+      "unlock": 18,
+      "print": 19
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 60,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 13,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 46,
+      "unlock": 8,
+      "print": 9
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 58,
+      "unlock": 7,
+      "print": 9
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 18,
+      "unlock": 7,
+      "print": 5
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 55,
+      "unlock": 18,
+      "print": 18
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 68,
+      "unlock": 19,
+      "print": 19
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 41,
+      "unlock": 7,
+      "print": 6
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 50,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 51,
+      "unlock": 9,
+      "print": 8
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 48,
+      "unlock": 4,
+      "print": 5
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 57,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 74,
+      "unlock": 20,
+      "print": 22
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 73,
+      "unlock": 26,
+      "print": 34
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 46,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 36,
+      "unlock": 9,
+      "print": 10
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 38,
+      "unlock": 6,
+      "print": 6
+    }
+  ],
+  "Ancol LB": [
+    {
+      "date": "2025-09-01",
+      "foto": 45,
+      "unlock": 6,
+      "print": 5
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 61,
+      "unlock": 7,
+      "print": 6
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 70,
+      "unlock": 12,
+      "print": 12
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 77,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 77,
+      "unlock": 15,
+      "print": 15
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 151,
+      "unlock": 29,
+      "print": 29
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 107,
+      "unlock": 20,
+      "print": 19
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 71,
+      "unlock": 11,
+      "print": 12
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 47,
+      "unlock": 8,
+      "print": 10
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 70,
+      "unlock": 9,
+      "print": 11
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 55,
+      "unlock": 13,
+      "print": 13
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 55,
+      "unlock": 17,
+      "print": 16
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 113,
+      "unlock": 19,
+      "print": 20
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 125,
+      "unlock": 28,
+      "print": 29
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 68,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 63,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 45,
+      "unlock": 3,
+      "print": 4
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 67,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 70,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 151,
+      "unlock": 29,
+      "print": 31
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 75,
+      "unlock": 15,
+      "print": 16
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 35,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 24,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 37,
+      "unlock": 5,
+      "print": 6
+    }
+  ],
+  "Senayan Park 2": [
+    {
+      "date": "2025-09-01",
+      "foto": 47,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 46,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 42,
+      "unlock": 12,
+      "print": 13
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 23,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 116,
+      "unlock": 33,
+      "print": 31
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 89,
+      "unlock": 43,
+      "print": 41
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 89,
+      "unlock": 30,
+      "print": 30
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 29,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 58,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 17,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 43,
+      "unlock": 11,
+      "print": 12
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 26,
+      "unlock": 6,
+      "print": 5
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 89,
+      "unlock": 36,
+      "print": 38
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 99,
+      "unlock": 27,
+      "print": 28
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 41,
+      "unlock": 10,
+      "print": 9
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 29,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 42,
+      "unlock": 12,
+      "print": 13
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 52,
+      "unlock": 10,
+      "print": 9
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 50,
+      "unlock": 10,
+      "print": 8
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 102,
+      "unlock": 23,
+      "print": 27
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 94,
+      "unlock": 29,
+      "print": 25
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 26,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 25,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 29,
+      "unlock": 3,
+      "print": 3
+    }
+  ],
+  "Stuja Di Pantai": [
+    {
+      "date": "2025-08-31",
+      "foto": 8,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 51,
+      "unlock": 34,
+      "print": 35
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 46,
+      "unlock": 17,
+      "print": 19
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 42,
+      "unlock": 26,
+      "print": 28
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 57,
+      "unlock": 32,
+      "print": 34
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 93,
+      "unlock": 45,
+      "print": 47
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 87,
+      "unlock": 54,
+      "print": 61
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 72,
+      "unlock": 43,
+      "print": 43
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 63,
+      "unlock": 39,
+      "print": 44
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 21,
+      "unlock": 12,
+      "print": 13
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 19,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 61,
+      "unlock": 22,
+      "print": 20
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 28,
+      "unlock": 13,
+      "print": 15
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 69,
+      "unlock": 45,
+      "print": 50
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 40,
+      "unlock": 20,
+      "print": 23
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 46,
+      "unlock": 22,
+      "print": 22
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 23,
+      "unlock": 13,
+      "print": 16
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 19,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 27,
+      "unlock": 11,
+      "print": 15
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 40,
+      "unlock": 12,
+      "print": 0
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 39,
+      "unlock": 14,
+      "print": 7
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 40,
+      "unlock": 16,
+      "print": 19
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 34,
+      "unlock": 11,
+      "print": 10
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 40,
+      "unlock": 13,
+      "print": 14
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 22,
+      "unlock": 12,
+      "print": 12
+    }
+  ],
+  "Museum Mandiri Jakarta": [
+    {
+      "date": "2025-09-01",
+      "foto": 3,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 6,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 19,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 5,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 55,
+      "unlock": 6,
+      "print": 7
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 39,
+      "unlock": 15,
+      "print": 17
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 13,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 24,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 10,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 8,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 58,
+      "unlock": 14,
+      "print": 15
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 48,
+      "unlock": 8,
+      "print": 10
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 5,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 21,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 10,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 25,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 11,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 47,
+      "unlock": 10,
+      "print": 13
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 50,
+      "unlock": 8,
+      "print": 7
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 4,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 17,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 25,
+      "unlock": 1,
+      "print": 1
+    }
+  ],
+  "HeHa Sky View - Love Lock": [
+    {
+      "date": "2025-09-01",
+      "foto": 56,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 50,
+      "unlock": 17,
+      "print": 19
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 53,
+      "unlock": 13,
+      "print": 14
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 3,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 77,
+      "unlock": 18,
+      "print": 22
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 117,
+      "unlock": 40,
+      "print": 44
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 75,
+      "unlock": 24,
+      "print": 26
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 58,
+      "unlock": 20,
+      "print": 21
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 31,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 36,
+      "unlock": 4,
+      "print": 5
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 43,
+      "unlock": 10,
+      "print": 13
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 38,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 85,
+      "unlock": 19,
+      "print": 20
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 44,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 21,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 5,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 7,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 56,
+      "unlock": 6,
+      "print": 7
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 62,
+      "unlock": 8,
+      "print": 11
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 46,
+      "unlock": 6,
+      "print": 7
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 32,
+      "unlock": 2,
+      "print": 3
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    }
+  ],
+  "JGC": [
+    {
+      "date": "2025-09-01",
+      "foto": 53,
+      "unlock": 3,
+      "print": 4
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 53,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 65,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 31,
+      "unlock": 3,
+      "print": 4
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 94,
+      "unlock": 13,
+      "print": 17
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 132,
+      "unlock": 24,
+      "print": 23
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 136,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 43,
+      "unlock": 1,
+      "print": 2
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 43,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 44,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 46,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 66,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 115,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 126,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 55,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 26,
+      "unlock": 4,
+      "print": 5
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 36,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 61,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 77,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 120,
+      "unlock": 12,
+      "print": 15
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 74,
+      "unlock": 13,
+      "print": 14
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 39,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 32,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 35,
+      "unlock": 2,
+      "print": 2
+    }
+  ],
+  "The Keranjang Bali": [
+    {
+      "date": "2025-09-01",
+      "foto": 51,
+      "unlock": 21,
+      "print": 23
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 48,
+      "unlock": 15,
+      "print": 16
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 26,
+      "unlock": 6,
+      "print": 11
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 50,
+      "unlock": 18,
+      "print": 20
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 44,
+      "unlock": 27,
+      "print": 27
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 59,
+      "unlock": 22,
+      "print": 23
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 70,
+      "unlock": 31,
+      "print": 39
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 43,
+      "unlock": 16,
+      "print": 18
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 40,
+      "unlock": 17,
+      "print": 20
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 28,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 39,
+      "unlock": 17,
+      "print": 21
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 36,
+      "unlock": 12,
+      "print": 12
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 29,
+      "unlock": 13,
+      "print": 14
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 47,
+      "unlock": 13,
+      "print": 16
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 30,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 25,
+      "unlock": 6,
+      "print": 8
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 40,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 70,
+      "unlock": 17,
+      "print": 18
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 29,
+      "unlock": 10,
+      "print": 10
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 72,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 62,
+      "unlock": 14,
+      "print": 14
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 25,
+      "unlock": 13,
+      "print": 15
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 41,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 17,
+      "unlock": 5,
+      "print": 5
+    }
+  ],
+  "The Alana Hotel & Conference Center Sentul City": [
+    {
+      "date": "2025-08-31",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 11,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 10,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 4,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 6,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 15,
+      "unlock": 3,
+      "print": 4
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 28,
+      "unlock": 10,
+      "print": 11
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 8,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 2,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 4,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 4,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 6,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 4,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 18,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 18,
+      "unlock": 6,
+      "print": 11
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 11,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 6,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 10,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 17,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 11,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 14,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 18,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 8,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 10,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 4,
+      "unlock": 1,
+      "print": 1
+    }
+  ],
+  "Vacation Hotel Sheraton": [
+    {
+      "date": "2025-09-01",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 3,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-22",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-24",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    }
+  ],
+  "Beachwalk Vacation": [
+    {
+      "date": "2025-09-02",
+      "foto": 0,
+      "unlock": 2,
+      "print": 0
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 0,
+      "unlock": 4,
+      "print": 0
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 0,
+      "unlock": 6,
+      "print": 0
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 0,
+      "unlock": 2,
+      "print": 0
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 0,
+      "unlock": 2,
+      "print": 0
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 0,
+      "unlock": 6,
+      "print": 0
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 0,
+      "unlock": 4,
+      "print": 0
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 0,
+      "unlock": 2,
+      "print": 0
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 0,
+      "unlock": 2,
+      "print": 0
+    },
+    {
+      "date": "2025-09-21",
+      "foto": 0,
+      "unlock": 6,
+      "print": 0
+    },
+    {
+      "date": "2025-09-23",
+      "foto": 0,
+      "unlock": 2,
+      "print": 0
+    }
+  ],
+  "Kapal Api Indonesia Open (1)": [
+    {
+      "date": "2025-09-21",
+      "foto": 0,
+      "unlock": 1,
+      "print": 0
+    }
+  ],
+  "PKT Cup Bontang": [
+    {
+      "date": "2025-09-20",
+      "foto": 63,
+      "unlock": 10,
+      "print": 12
+    }
+  ],
+  "MLD Spot": [
+    {
+      "date": "2025-09-06",
+      "foto": 148,
+      "unlock": 199,
+      "print": 199
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 1,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 15,
+      "unlock": 16,
+      "print": 16
+    },
+    {
+      "date": "2025-09-20",
+      "foto": 122,
+      "unlock": 173,
+      "print": 173
+    }
+  ],
+  "Hoolu Burger": [
+    {
+      "date": "2025-08-31",
+      "foto": 7,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-01",
+      "foto": 17,
+      "unlock": 4,
+      "print": 7
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 22,
+      "unlock": 11,
+      "print": 13
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 22,
+      "unlock": 6,
+      "print": 4
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 15,
+      "unlock": 6,
+      "print": 7
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 52,
+      "unlock": 22,
+      "print": 25
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 27,
+      "unlock": 14,
+      "print": 19
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 68,
+      "unlock": 27,
+      "print": 36
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 17,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 22,
+      "unlock": 11,
+      "print": 11
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 32,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 21,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 17,
+      "unlock": 12,
+      "print": 13
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 27,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 52,
+      "unlock": 18,
+      "print": 20
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 10,
+      "unlock": 3,
+      "print": 4
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 16,
+      "unlock": 6,
+      "print": 6
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 25,
+      "unlock": 10,
+      "print": 13
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 10,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-19",
+      "foto": 15,
+      "unlock": 7,
+      "print": 8
+    }
+  ],
+  "9th IndonesiaNEXT": [
+    {
+      "date": "2025-09-17",
+      "foto": 17,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 76,
+      "unlock": 143,
+      "print": 143
+    }
+  ],
+  "Florawisata D'Castello": [
+    {
+      "date": "2025-09-01",
+      "foto": 11,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 11,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 15,
+      "unlock": 1,
+      "print": 2
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 20,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 61,
+      "unlock": 7,
+      "print": 7
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 81,
+      "unlock": 11,
+      "print": 11
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 70,
+      "unlock": 9,
+      "print": 9
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 16,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 9,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 2,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 7,
+      "unlock": 1,
+      "print": 2
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 79,
+      "unlock": 19,
+      "print": 20
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 40,
+      "unlock": 11,
+      "print": 11
+    },
+    {
+      "date": "2025-09-15",
+      "foto": 10,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-16",
+      "foto": 13,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-17",
+      "foto": 15,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-18",
+      "foto": 8,
+      "unlock": 1,
+      "print": 1
+    }
+  ],
+  "Djarum Supersoccer Surabaya": [
+    {
+      "date": "2025-09-10",
+      "foto": 9,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 24,
+      "unlock": 48,
+      "print": 48
+    },
+    {
+      "date": "2025-09-13",
+      "foto": 26,
+      "unlock": 40,
+      "print": 40
+    },
+    {
+      "date": "2025-09-14",
+      "foto": 36,
+      "unlock": 55,
+      "print": 55
+    }
+  ],
+  "Transjakarta - Halte CSW": [
+    {
+      "date": "2025-09-14",
+      "foto": 0,
+      "unlock": 1,
+      "print": 0
+    }
+  ],
+  "Myloc Coffe & Cafe": [
+    {
+      "date": "2025-09-13",
+      "foto": 0,
+      "unlock": 1,
+      "print": 0
+    }
+  ],
+  "Freelance": [
+    {
+      "date": "2025-09-01",
+      "foto": 10,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 7,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-08",
+      "foto": 11,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 6,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-12",
+      "foto": 2,
+      "unlock": 1,
+      "print": 1
+    }
+  ],
+  "HeHa Sky View - Sky Lolli": [
+    {
+      "date": "2025-09-01",
+      "foto": 31,
+      "unlock": 5,
+      "print": 10
+    },
+    {
+      "date": "2025-09-02",
+      "foto": 17,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-03",
+      "foto": 11,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 30,
+      "unlock": 4,
+      "print": 4
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 38,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 63,
+      "unlock": 7,
+      "print": 8
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 15,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-09",
+      "foto": 29,
+      "unlock": 3,
+      "print": 3
+    },
+    {
+      "date": "2025-09-10",
+      "foto": 12,
+      "unlock": 1,
+      "print": 1
+    },
+    {
+      "date": "2025-09-11",
+      "foto": 30,
+      "unlock": 1,
+      "print": 1
+    }
+  ],
+  "IM3 - Pestapora 2025 (3)": [
+    {
+      "date": "2025-09-03",
+      "foto": 1,
+      "unlock": 0,
+      "print": 0
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 11,
+      "unlock": 10,
+      "print": 10
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 67,
+      "unlock": 70,
+      "print": 52
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 63,
+      "unlock": 63,
+      "print": 0
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 103,
+      "unlock": 103,
+      "print": 0
+    }
+  ],
+  "IM3 - Pestapora 2025 (2)": [
+    {
+      "date": "2025-09-03",
+      "foto": 8,
+      "unlock": 8,
+      "print": 8
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 7,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 306,
+      "unlock": 271,
+      "print": 177
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 300,
+      "unlock": 300,
+      "print": 1
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 358,
+      "unlock": 358,
+      "print": 0
+    }
+  ],
+  "IM3 - Pestapora 2025 (1)": [
+    {
+      "date": "2025-09-03",
+      "foto": 3,
+      "unlock": 2,
+      "print": 2
+    },
+    {
+      "date": "2025-09-04",
+      "foto": 4,
+      "unlock": 5,
+      "print": 5
+    },
+    {
+      "date": "2025-09-05",
+      "foto": 244,
+      "unlock": 233,
+      "print": 158
+    },
+    {
+      "date": "2025-09-06",
+      "foto": 359,
+      "unlock": 358,
+      "print": 0
+    },
+    {
+      "date": "2025-09-07",
+      "foto": 309,
+      "unlock": 309,
+      "print": 0
+    }
+  ]
+}

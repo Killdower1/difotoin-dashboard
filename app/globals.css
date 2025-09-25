@@ -1,0 +1,24 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light/Dark primitives (simple) */
+:root {
+  --bg: #0b0b0c;
+  --fg: #eaeaea;
+  --muted: #9aa0a6;
+  --card: #111113;
+  --border: #1e1e20;
+}
+html:not(.dark) {
+  --bg: #ffffff;
+  --fg: #0b0b0c;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --border: #e5e7eb;
+}
+.bg-background { background-color: var(--bg); }
+.text-foreground { color: var(--fg); }
+.text-muted-foreground { color: var(--muted); }
+.border { border-color: var(--border); }
+.bg-card { background-color: var(--card); }
