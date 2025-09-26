@@ -1,9 +1,22 @@
+# Dependencies
 node_modules/
+
+# Next.js build
 .next/
 out/
+
+# Logs & cache
 *.log
 .cache/
+pnpm-debug.log*
+npm-debug.log*
+
+# Uploads & local data
 uploads/
 data/
 *.db
 *.sqlite
+
+# Misc
+.DS_Store
+Thumbs.db
