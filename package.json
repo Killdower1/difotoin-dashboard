@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prisma:seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
+    "@prisma/client": "^6.16.2",
     "@radix-ui/react-dialog": "^1.1.15",
     "autoprefixer": "^10.4.20",
     "lucide-react": "^0.460.0",
@@ -23,6 +25,8 @@
     "@types/node": "24.5.2",
     "@types/react": "19.1.13",
     "electron-to-chromium": "^1.5.222",
+    "prisma": "^6.16.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.5.4"
   }
 }

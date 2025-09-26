@@ -14,8 +14,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { MapPin, Camera, Printer, TrendingUp, Sun, Moon, Filter, Activity, Info, ArrowUpRight, ArrowDownRight, Minus } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip as RTooltip, ResponsiveContainer, CartesianGrid, Legend } from "recharts";
-import { THRESHOLDS } from "@/lib/classifier";
-
+import { useSettings } from "./useSettings";
 type OutletClass = "keeper" | "optimize-conversion" | "relocate-candidate" | "check-uptime/ops" | "monitor" | "investigate-data";
 
 type PrevBlock = {
@@ -91,6 +90,23 @@ function Delta({v, isPct=false}: {v:number|null|undefined, isPct?:boolean}) {
 }
 
 export default function LocationReviewDashboard() {
+  // === Thresholds from /api/settings (panel) ===
+  const { S } = useSettings();
+  const TH = {
+    ACTIVE_LOW: (S.uptime_ratio_min ?? 65) / 100,
+
+    KEEPER_MIN_FOTO: S.keeper_foto_min ?? 1000,
+    KEEPER_MIX_FOTO: S.keeper_alt_foto_min ?? 600,
+    KEEPER_MIX_CONV: (S.keeper_alt_conversion_min ?? 40) / 100,
+    KEEPER_MIX_ACTIVE: (S.keeper_alt_active_ratio_min ?? 80) / 100,
+
+    OPT_MIN_FOTO: S.optimize_foto_min ?? 600,
+    OPT_MAX_CONV: (S.optimize_conversion_max ?? 30) / 100,
+
+    RELOC_MIN_FOTO: S.relocate_foto_min ?? 1,
+    RELOC_MAX_FOTO_EXCLUSIVE: S.relocate_foto_max ?? 200,
+  };
+
   const { dark, setDark } = useThemeToggle();
 
   // ===== state =====
@@ -354,22 +370,22 @@ export default function LocationReviewDashboard() {
                             <tbody>
                               <tr>
                                 <td className="p-2 font-medium">Check Uptime/Ops</td>
-                                <td className="p-2">Active Ratio &lt; {Math.round(THRESHOLDS.ACTIVE_LOW*100)}%</td>
+                                <td className="p-2">Active Ratio &lt; {Math.round(TH.ACTIVE_LOW*100)}%</td>
                               </tr>
                               <tr>
                                 <td className="p-2 font-medium">Keeper</td>
                                 <td className="p-2">
-                                  Foto ≥ {THRESHOLDS.KEEPER_MIN_FOTO}<br/>
-                                  atau (Foto ≥ {THRESHOLDS.KEEPER_MIX_FOTO} &amp; Conversion ≥ {Math.round(THRESHOLDS.KEEPER_MIX_CONV*100)}% &amp; Active Ratio ≥ {Math.round(THRESHOLDS.KEEPER_MIX_ACTIVE*100)}%)
+                                  Foto ≥ {TH.KEEPER_MIN_FOTO}<br/>
+                                  atau (Foto ≥ {TH.KEEPER_MIX_FOTO} &amp; Conversion ≥ {Math.round(TH.KEEPER_MIX_CONV*100)}% &amp; Active Ratio ≥ {Math.round(TH.KEEPER_MIX_ACTIVE*100)}%)
                                 </td>
                               </tr>
                               <tr>
                                 <td className="p-2 font-medium">Optimize Conversion</td>
-                                <td className="p-2">Foto ≥ {THRESHOLDS.OPT_MIN_FOTO} &amp; Conversion &lt; {Math.round(THRESHOLDS.OPT_MAX_CONV*100)}%</td>
+                                <td className="p-2">Foto ≥ {TH.OPT_MIN_FOTO} &amp; Conversion &lt; {Math.round(TH.OPT_MAX_CONV*100)}%</td>
                               </tr>
                               <tr>
                                 <td className="p-2 font-medium">Relocate</td>
-                                <td className="p-2">{THRESHOLDS.RELOC_MIN_FOTO} ≤ Foto &lt; {THRESHOLDS.RELOC_MAX_FOTO_EXCLUSIVE}</td>
+                                <td className="p-2">{TH.RELOC_MIN_FOTO} ≤ Foto &lt; {TH.RELOC_MAX_FOTO_EXCLUSIVE}</td>
                               </tr>
                               <tr>
                                 <td className="p-2 font-medium">Monitor</td>
