@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import React, { useMemo, useState, useEffect } from "react";
+import React,{  useMemo, useState, useEffect , useRef } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -110,9 +110,18 @@ export default function LocationReviewDashboard() {
   const { dark, setDark } = useThemeToggle();
 
   // ===== state =====
-  const [period, setPeriod] = useState<string>("latest");
+  // ====== classifier thresholds state (from /api/classifier-thresholds) ======
+  const [T, setT] = useState<any | null>(null);
+  useEffect(() => {
+  const ctl = new AbortController();
+  fetch("/api/classifier-thresholds", { cache: "no-store", signal: ctl.signal })
+    .then(r => r.json()).then(d => setT(d.data))
+    .catch(() => setT(null));
+  return () => { try { ctl.abort(); } catch {} };
+}, []);  const [period, setPeriod] = useState<string>("latest");
   const [compare, setCompare] = useState<string>("none");
-  const [rows, setRows] = useState<OutletRow[]>([]);
+  const [comparePending, setComparePending] = useState(false);
+const [rows, setRows] = useState<OutletRow[]>([]);
   const [query, setQuery] = useState("");
   const [area, setArea] = useState<string>("all");
   const [venueType, setVenueType] = useState<string>("all");
@@ -120,16 +129,50 @@ export default function LocationReviewDashboard() {
   const [sortBy, setSortBy] = useState<string>("foto_desc");
   const [activeTab, setActiveTab] = useState<string>("keeper");
   const [limit, setLimit] = useState<number>(99999); // tampil ALL
-
+  
+  // request guards
+  const fetchCtlRef = useRef<AbortController | null>(null);
+  const lastTokenRef = useRef('');
+  const debounceRef = useRef<any>(null);  
+  // request guards
   // load data dari API (sudah memakai normalizer & classifier, plus compare jika dipilih)
-  useEffect(()=>{ (async ()=>{
-    const q = new URLSearchParams();
-    q.set("period", period);
-    if (compare !== "none") q.set("compare", compare);
-    const r = await fetch("/api/metrics/outlets?" + q.toString(), { cache:"no-store" });
-    const j = await r.json();
-    setRows(Array.isArray(j) ? j : []);
-  })(); }, [period, compare]);
+useEffect(() => {
+  // batalkan timer & request sebelumnya
+  if (debounceRef.current) { try { clearTimeout(debounceRef.current); } catch {} }
+  if (fetchCtlRef.current) { try { fetchCtlRef.current.abort(); } catch {} }
+
+  // debounce 120ms biar event state cepat (period/compare) digabung
+  debounceRef.current = setTimeout(() => {
+    const __token = `${period}|${compare}`;
+    lastTokenRef.current = __token;
+
+    const ctl = new AbortController();
+    fetchCtlRef.current = ctl;
+
+    (async () => {
+      try {
+        const q = new URLSearchParams();
+        q.set("period", period);
+        if (compare !== "none") q.set("compare", compare);
+
+        const r = await fetch(`/api/metrics/outlets?${q.toString()}`, { cache: "no-store", signal: ctl.signal });
+        const j = await r.json();
+
+        if (lastTokenRef.current !== __token) return; // guard
+        setRows(Array.isArray(j) ? j : []); if (compare !== "none") setComparePending(false);
+      } catch (err: any) {
+        if (err?.name === "AbortError" || String(err).includes("AbortError")) return;
+        console.error("fetch /api/metrics/outlets error:", err);
+      }
+    })();
+  }, 120);
+
+  // cleanup saat deps berubah / unmount
+  return () => {
+    if (debounceRef.current) { try { clearTimeout(debounceRef.current); } catch {} }
+    if (fetchCtlRef.current) { try { fetchCtlRef.current.abort(); } catch {} }
+  };
+}, [period, compare]);
 
   // derive filter options
   const areas = useMemo(() => Array.from(new Set(rows.map(o => o.area).filter(Boolean))) as string[], [rows]);
@@ -211,7 +254,8 @@ export default function LocationReviewDashboard() {
   const compareOptions = periods.filter(p => p !== "latest" && p !== period);
 
   // apakah compare aktif?
-  const compareOn = compare !== "none";
+  const hasDelta = useMemo(() => rows.some(o => o._delta), [rows]);
+const compareOn = compare !== "none" && hasDelta;
 
   return (
     <TooltipProvider>
@@ -229,7 +273,7 @@ export default function LocationReviewDashboard() {
                 {periods.map(p => (<SelectItem key={p} value={p}>{p}</SelectItem>))}
               </SelectContent>
             </Select>
-            <Select value={compare} onValueChange={setCompare}>
+            <Select value={compare} onValueChange={(v)=>{ setCompare(v); setComparePending(v !== "none"); }}>
               <SelectTrigger className="w-[160px]"><SelectValue placeholder="Compare" /></SelectTrigger>
               <SelectContent>
                 <SelectItem value="none">No Compare</SelectItem>
@@ -349,52 +393,52 @@ export default function LocationReviewDashboard() {
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button size="sm" variant="outline" className="h-8">
-                          <Info className="h-4 w-4 mr-2" /> Rules
+                          <Info className="h-4 w-4 mr-2" /> Klasifikasi Info
                         </Button>
                       </DialogTrigger>
                       <DialogContent className="max-w-[720px]">
-                        <DialogHeader>
-                          <DialogTitle>Ambang Klasifikasi</DialogTitle>
-                        </DialogHeader>
-                        <div className="mt-2 text-sm text-muted-foreground">
-                          Semua ambang diambil langsung dari <code>lib/classifier.ts</code> (single source of truth).
-                        </div>
-                        <div className="mt-4 overflow-hidden rounded-md border">
-                          <table className="w-full text-sm">
-                            <thead className="bg-muted/50">
-                              <tr>
-                                <th className="text-left p-2 w-[220px]">Status</th>
-                                <th className="text-left p-2">Kriteria</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td className="p-2 font-medium">Check Uptime/Ops</td>
-                                <td className="p-2">Active Ratio &lt; {Math.round(TH.ACTIVE_LOW*100)}%</td>
-                              </tr>
-                              <tr>
-                                <td className="p-2 font-medium">Keeper</td>
-                                <td className="p-2">
-                                  Foto ≥ {TH.KEEPER_MIN_FOTO}<br/>
-                                  atau (Foto ≥ {TH.KEEPER_MIX_FOTO} &amp; Conversion ≥ {Math.round(TH.KEEPER_MIX_CONV*100)}% &amp; Active Ratio ≥ {Math.round(TH.KEEPER_MIX_ACTIVE*100)}%)
-                                </td>
-                              </tr>
-                              <tr>
-                                <td className="p-2 font-medium">Optimize Conversion</td>
-                                <td className="p-2">Foto ≥ {TH.OPT_MIN_FOTO} &amp; Conversion &lt; {Math.round(TH.OPT_MAX_CONV*100)}%</td>
-                              </tr>
-                              <tr>
-                                <td className="p-2 font-medium">Relocate</td>
-                                <td className="p-2">{TH.RELOC_MIN_FOTO} ≤ Foto &lt; {TH.RELOC_MAX_FOTO_EXCLUSIVE}</td>
-                              </tr>
-                              <tr>
-                                <td className="p-2 font-medium">Monitor</td>
-                                <td className="p-2">Default jika tidak memenuhi kriteria di atas</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </DialogContent>
+  <DialogHeader>
+    <DialogTitle>Aturan Klasifikasi (Bulanan, tanpa Active Ratio)</DialogTitle>
+  </DialogHeader>
+  {!T ? (
+    <div className="text-sm text-muted-foreground">Memuat ambang dari Settings…</div>
+  ) : (
+    <div className="mt-2 text-sm text-muted-foreground space-y-4">
+      <p>Conversion = <code>unlock / foto × 100%</code>. Semua angka di bawah diambil real-time dari <code>Settings</code> (/admin/classifier).</p>
+      <div className="mt-2 overflow-hidden rounded-md border">
+        <table className="w-full text-sm">
+          <thead className="bg-muted/50">
+            <tr>
+              <th className="text-left p-2 w-[220px]">Status</th>
+              <th className="text-left p-2">Kriteria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-2 font-medium">Keeper</td>
+              <td className="p-2">
+                Foto ≥ {T.CLASS_KEEPER_FOTO_MIN_A}<br/>
+                atau (Foto ≥ {T.CLASS_KEEPER_FOTO_MIN_B} &amp; Conv ≥ {T.CLASS_KEEPER_CONV_MIN_B}%)
+              </td>
+            </tr>
+            <tr>
+              <td className="p-2 font-medium">Optimize Conversion</td>
+              <td className="p-2">Foto ≥ {T.CLASS_OPTIMIZE_FOTO_MIN} &amp; Conv &lt; {T.CLASS_OPTIMIZE_CONV_MAX}%</td>
+            </tr>
+            <tr>
+              <td className="p-2 font-medium">Relocate</td>
+              <td className="p-2">{T.CLASS_RELOCATE_FOTO_MIN} ≤ Foto &lt; {T.CLASS_RELOCATE_FOTO_MAX}</td>
+            </tr>
+            <tr>
+              <td className="p-2 font-medium">Monitor</td>
+              <td className="p-2">Default jika tidak memenuhi kriteria di atas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )}
+</DialogContent>
                     </Dialog>
                   </div>
                   <Tabs value={activeTab} onValueChange={(v) => setActiveTab(v)}>
@@ -562,3 +606,12 @@ function buildWeekendAgg(list: OutletRow[]) {
   const weekend = 1 - weekday;
   return [ { label: "All Outlets (filtered)", weekday, weekend } ];
 }
+
+
+
+
+
+
+
+
+

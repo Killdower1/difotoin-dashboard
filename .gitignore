@@ -16,3 +16,17 @@ docker-data/
 *.pid
 
 /generated/prisma
+# local backups
+*.bak
+*.bak_*
+*.bak-*
+*.backup.*
+*.tmp
+
+# build & deps
+.next/
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
