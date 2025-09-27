@@ -1,6 +1,6 @@
 ﻿import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
-import { classifyOutlet } from "@/lib/classifier";
+import { loadThresholds, classifyOutletSync } from "@/lib/classifier";
 
 type Row = {
   outlet: string;
@@ -17,60 +17,67 @@ type Row = {
   eveningPeakShare?: number;
   class?: string;
   classReason?: string;
+  _prev?: {
+    foto: number; unlock: number; print: number; conv: number; class: string;
+  };
+  _delta?: {
+    foto: number; unlock: number; print: number;
+    conv: number; fotoPct: number|null;
+    statusChange: "same"|"upgrade"|"downgrade";
+    trendingUp: boolean; trendingDown: boolean;
+  };
 };
 
-function toNum(n:any){ const v = Number(n||0); return Number.isFinite(v) ? v : 0; }
+function num(v:any){ const n = Number(v ?? 0); return Number.isFinite(n) ? n : 0; }
 async function exists(p:string){ try{ await stat(p); return true; }catch{ return false; } }
-function z(n:number){ return String(n).padStart(2,"0"); }
 
 function resolvePath(period:string){
   const root = process.cwd();
-  if (period === "latest") return path.join(root, "data", "metrics_outlets.json");
-  return path.join(root, "data", "periods", period, "metrics_outlets.json");
+  return period === "latest"
+    ? path.join(root, "data", "metrics_outlets.json")
+    : path.join(root, "data", "periods", period, "metrics_outlets.json");
 }
 
-async function load(period:string): Promise<Row[]>{
-  const p = resolvePath(period);
-  if (!(await exists(p))) return [];
-  try{
-    const txt = await readFile(p, "utf8");
+async function load(period:string): Promise<Row[]> {
+  const fp = resolvePath(period);
+  if (!(await exists(fp))) return [];
+  try {
+    const txt = await readFile(fp, "utf8");
     const arr = JSON.parse(txt);
-    return Array.isArray(arr) ? arr as Row[] : [];
-  }catch{
+    return Array.isArray(arr) ? (arr as Row[]) : [];
+  } catch {
     return [];
   }
 }
 
 function mergeRows(rows: Row[]): Row[] {
   const by = new Map<string, Row>();
-  for (const r0 of rows){
-    const name = String(r0?.outlet||"").trim();
+  for (const r0 of rows) {
+    const name = String(r0?.outlet || "").trim();
     if (!name) continue;
-
-    const r = {
+    const r: Row = {
       outlet: name,
       area: r0.area ?? "",
       venueType: r0.venueType ?? "",
       venueParent: r0.venueParent ?? r0.venueType ?? "",
       venueSubType: r0.venueSubType ?? "",
       indoorOutdoor: r0.indoorOutdoor ?? "",
-      foto: toNum(r0.foto),
-      unlock: toNum(r0.unlock),
-      print: toNum(r0.print),
-      activeRatio: toNum(r0.activeRatio),
-      weekendShare: toNum(r0.weekendShare),
-      eveningPeakShare: toNum(r0.eveningPeakShare),
-      class: (r0.class||"").trim(),
+      foto: num(r0.foto),
+      unlock: num(r0.unlock),
+      print: num(r0.print),
+      activeRatio: num(r0.activeRatio),
+      weekendShare: num(r0.weekendShare),
+      eveningPeakShare: num(r0.eveningPeakShare),
+      class: (r0.class || "").trim(),
       classReason: (r0 as any).classReason,
-    } as Row;
-
+    };
     const cur = by.get(name);
-    if (!cur){
+    if (!cur) {
       by.set(name, r);
     } else {
-      cur.foto = toNum(cur.foto) + toNum(r.foto);
-      cur.unlock = toNum(cur.unlock) + toNum(r.unlock);
-      cur.print = toNum(cur.print) + toNum(r.print);
+      cur.foto = num(cur.foto) + num(r.foto);
+      cur.unlock = num(cur.unlock) + num(r.unlock);
+      cur.print = num(cur.print) + num(r.print);
       cur.area ||= r.area;
       cur.venueType ||= r.venueType;
       cur.venueParent ||= r.venueParent;
@@ -81,93 +88,78 @@ function mergeRows(rows: Row[]): Row[] {
   return Array.from(by.values());
 }
 
-function conv(row?: Row){
-  const f = toNum(row?.foto);
-  const u = toNum(row?.unlock);
-  return f>0 ? u/f : 0;
-}
+// konversi: utk classifier perlu %; utk UI perlu fraksi 0..1
+const convPct = (row?: Row) => {
+  const f = num(row?.foto), u = num(row?.unlock);
+  return f > 0 ? (u / f) * 100 : 0;
+};
+const convFrac = (row?: Row) => {
+  const f = num(row?.foto), u = num(row?.unlock);
+  return f > 0 ? (u / f) : 0;
+};
 
-export async function GET(req: Request){
+export async function GET(req: Request) {
+  await loadThresholds();
+
   const url = new URL(req.url);
   const period = url.searchParams.get("period") || "latest";
   const compare = url.searchParams.get("compare") || "";
 
-  // load current
-  const rows = await load(period);
-  const out = mergeRows(rows);
+  // 1) Muat & gabungkan data period aktif
+  const rowsNow = mergeRows(await load(period));
 
-  // auto-classify jika class kosong/monitor
-  for (const r of out){
-    const current = String(r.class||"").trim() || "monitor";
-    if (current === "monitor"){
-      const res = classifyOutlet({
-        outlet: r.outlet,
-        foto: r.foto,
-        unlock: r.unlock,
-        activeRatio: r.activeRatio,
-        eveningPeakShare: r.eveningPeakShare,
-        weekendShare: r.weekendShare,
+  // 2) Klasifikasi setiap row (tanpa active ratio)
+  for (const r of rowsNow) {
+    const res = classifyOutletSync({
+      foto: num(r.foto),
+      unlock: num(r.unlock),
+      conversion: convPct(r), // classifier pakai %
+    });
+    r.class = res.cls;
+    r.classReason = res.reason;
+  }
+
+  // 3) Kalau compare diisi, attach _prev/_delta yang konsisten dgn UI
+  if (compare) {
+    const rowsPrev = mergeRows(await load(compare));
+    const pmap = new Map<string, Row>();
+    for (const p of rowsPrev) pmap.set(String(p.outlet || "").trim(), p);
+
+    for (const r of rowsNow) {
+      const p = pmap.get(String(r.outlet || "").trim()) || null;
+
+      const fotoPrev   = num(p?.foto);
+      const unlockPrev = num(p?.unlock);
+      const printPrev  = num(p?.print);
+      const convPrevFr = convFrac(p);
+      const convNowFr  = convFrac(r);
+
+      const prevRes = classifyOutletSync({
+        foto: fotoPrev,
+        unlock: unlockPrev,
+        conversion: convPrevFr * 100, // classifier % 
       });
-      r.class = res.cls;
-      r.classReason = res.reason;
+      const nowCls = r.class || classifyOutletSync({
+        foto: num(r.foto),
+        unlock: num(r.unlock),
+        conversion: convNowFr * 100,
+      }).cls;
+
+      const dFoto = num(r.foto) - fotoPrev;
+      const dUnlock = num(r.unlock) - unlockPrev;
+      const dPrint = num(r.print) - printPrev;
+      const dConv = convNowFr - convPrevFr; // 0..1 (UI pakai fraksi)
+      const dFotoPct = fotoPrev > 0 ? dFoto / fotoPrev : null;
+
+      const statusChange =
+        nowCls === prevRes.cls ? "same"
+        : ((prevRes.cls === "relocate-candidate" && nowCls !== "relocate-candidate") || (prevRes.cls !== "keeper" && nowCls === "keeper"))
+          ? "upgrade" : "downgrade";
+
+      (r as any)._prev = { foto: fotoPrev, unlock: unlockPrev, print: printPrev, conv: convPrevFr, class: prevRes.cls };
+      (r as any)._delta = { foto: dFoto, unlock: dUnlock, print: dPrint, conv: dConv, fotoPct: dFotoPct, statusChange, trendingUp: dFoto > 0, trendingDown: dFoto < 0 };
     }
   }
 
-  if (!compare){
-    return Response.json(out, { status: 200 });
-  }
-
-  // load previous & join
-  const prevRows = mergeRows(await load(compare));
-  const prevMap = new Map(prevRows.map(r => [String(r.outlet).trim(), r]));
-
-  const enriched = out.map(r => {
-    const p = prevMap.get(r.outlet);
-    const fotoPrev = toNum(p?.foto);
-    const unlockPrev = toNum(p?.unlock);
-    const printPrev = toNum(p?.print);
-    const arPrev = toNum(p?.activeRatio);
-    const convPrev = conv(p);
-    const convNow = conv(r);
-
-    const prevClass = (p?.class && String(p.class).trim()) || classifyOutlet({
-      outlet: p?.outlet || r.outlet,
-      foto: p?.foto,
-      unlock: p?.unlock,
-      activeRatio: p?.activeRatio,
-      eveningPeakShare: p?.eveningPeakShare,
-      weekendShare: p?.weekendShare,
-    }).cls;
-
-    const statusChange =
-      r.class === prevClass ? "same" :
-      (r.class === "keeper" || (prevClass === "relocate-candidate" && r.class !== prevClass)) ? "upgrade" :
-      "downgrade";
-
-    const dFoto = toNum(r.foto) - fotoPrev;
-    const dUnlock = toNum(r.unlock) - unlockPrev;
-    const dPrint = toNum(r.print) - printPrev;
-    const dActive = toNum(r.activeRatio) - arPrev;
-    const dConv = convNow - convPrev;
-
-    const dFotoPct = fotoPrev>0 ? dFoto / fotoPrev : null;
-    const trendingUp = dFotoPct!=null && dFotoPct >= 0.25 && fotoPrev >= 200;
-    const trendingDown = dFotoPct!=null && dFotoPct <= -0.25 && fotoPrev >= 200;
-
-    return {
-      ...r,
-      _prev: {
-        foto: fotoPrev, unlock: unlockPrev, print: printPrev,
-        activeRatio: arPrev, conv: convPrev, class: prevClass
-      },
-      _delta: {
-        foto: dFoto, fotoPct: dFotoPct,
-        unlock: dUnlock, print: dPrint,
-        activeRatio: dActive, conv: dConv,
-        statusChange, trendingUp, trendingDown
-      }
-    };
-  });
-
-  return Response.json(enriched, { status: 200 });
+  return Response.json(rowsNow, { status: 200 });
 }
