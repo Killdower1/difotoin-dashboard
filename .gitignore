@@ -30,3 +30,5 @@ dist/
 npm-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+# backups by script
+*.bak-*
