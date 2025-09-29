@@ -122,10 +122,6 @@ export default function LocationReviewDashboard() {
   const [compare, setCompare] = useState<string>("none");
   // injected fix: load periods
   const [periods, setPeriods] = useState<string[]>([]);
-  // injected fix: sort periods desc
-  const periodsDesc = (Array.isArray(periods) ? periods : [])
-    .filter((p) => /^\d{4}-\d{2}$/.test(p))
-    .sort((a, b) => (a < b ? 1 : -1));
   useEffect(() => {
     fetch("/api/periods")
       .then(r => r.json())
@@ -263,7 +259,7 @@ useEffect(() => {
 
   // daftar periode (silakan tambah sesuai data yang ada)
   const compareOptions = (Array.isArray(periods) ? periods : [])
-  .filter((p) => p !== "latest" && p !== period && /^\d{4}-\d{2}$/.test(p))
+  .filter((p) => p !== "latest" && p !== period && /^\d{4}-\d{2}.test(p))
   .sort((a, b) => (a < b ? 1 : -1));
 
   // apakah compare aktif?
@@ -283,7 +279,7 @@ const compareOn = compare !== "none" && hasDelta;
             <Select value={period} onValueChange={setPeriod}>
               <SelectTrigger className="w-[140px]"><SelectValue placeholder="Period" /></SelectTrigger>
               <SelectContent className="max-h-80 overflow-y-auto">
-                {periodsDesc.map(p => (<SelectItem key={p} value={p}>{p}</SelectItem>))}
+                {periods.map(p => (<SelectItem key={p} value={p}>{p}</SelectItem>))}
               </SelectContent>
             </Select>
             <Select value={compare} onValueChange={(v)=>{ setCompare(v); setComparePending(v !== "none"); }}>

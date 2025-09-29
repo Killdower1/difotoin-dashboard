@@ -131,7 +131,7 @@ export async function GET(req: Request) {
       const fotoPrev   = num(p?.foto);
       const unlockPrev = num(p?.unlock);
       const printPrev  = num(p?.print);
-      const convPrevFr = convFrac(p);
+      const convPrevFr = convFrac(p ?? undefined);
       const convNowFr  = convFrac(r);
 
       const prevRes = classifyOutletSync({

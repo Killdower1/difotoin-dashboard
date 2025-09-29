@@ -1,6 +1,7 @@
 FROM node:20-alpine AS deps
 WORKDIR /app
 COPY package*.json ./
+COPY prisma ./prisma
 RUN npm ci
 
 FROM node:20-alpine AS builder
@@ -10,6 +11,7 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 # pastikan direktori ini selalu ada supaya tahap runner bisa COPY
 RUN mkdir -p public data
+RUN npx prisma generate
 RUN npm run build
 
 FROM node:20-alpine AS runner

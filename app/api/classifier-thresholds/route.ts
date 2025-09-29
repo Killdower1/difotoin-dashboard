@@ -29,7 +29,7 @@ export async function GET() {
   });
   const map: Record<string, number> = {};
   for (const k of KEYS) {
-    const found = rows.find((r) => r.key === k);
+    const found = rows.find((r: any) => r.key === k);
     map[k] = typeof found?.value === "number" ? found.value : DEFAULTS[k as string];
   }
   return NextResponse.json({ data: map });

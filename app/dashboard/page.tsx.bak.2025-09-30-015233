@@ -120,18 +120,6 @@ export default function LocationReviewDashboard() {
   return () => { try { ctl.abort(); } catch {} };
 }, []);  const [period, setPeriod] = useState<string>("latest");
   const [compare, setCompare] = useState<string>("none");
-  // injected fix: load periods
-  const [periods, setPeriods] = useState<string[]>([]);
-  // injected fix: sort periods desc
-  const periodsDesc = (Array.isArray(periods) ? periods : [])
-    .filter((p) => /^\d{4}-\d{2}$/.test(p))
-    .sort((a, b) => (a < b ? 1 : -1));
-  useEffect(() => {
-    fetch("/api/periods")
-      .then(r => r.json())
-      .then(j => setPeriods(Array.isArray(j) ? j : []))
-      .catch(() => setPeriods([]));
-  }, []);
   const [comparePending, setComparePending] = useState(false);
 const [rows, setRows] = useState<OutletRow[]>([]);
   const [query, setQuery] = useState("");
@@ -262,9 +250,11 @@ useEffect(() => {
   }, [rows, compare]);
 
   // daftar periode (silakan tambah sesuai data yang ada)
-  const compareOptions = (Array.isArray(periods) ? periods : [])
-  .filter((p) => p !== "latest" && p !== period && /^\d{4}-\d{2}$/.test(p))
-  .sort((a, b) => (a < b ? 1 : -1));
+  const compareOptions = useMemo(() => {
+	return periods
+	.filter((p) => p !=="latest" && p !== period && /^\d{4}-\d{2}$/.test(p))
+	.sort((a,b) => (a < b ? 1 : -1 ));
+}, [periods, period]);
 
   // apakah compare aktif?
   const hasDelta = useMemo(() => rows.some(o => o._delta), [rows]);
@@ -282,13 +272,13 @@ const compareOn = compare !== "none" && hasDelta;
           <div className="flex items-center gap-3">
             <Select value={period} onValueChange={setPeriod}>
               <SelectTrigger className="w-[140px]"><SelectValue placeholder="Period" /></SelectTrigger>
-              <SelectContent className="max-h-80 overflow-y-auto">
-                {periodsDesc.map(p => (<SelectItem key={p} value={p}>{p}</SelectItem>))}
+              <SelectContent>
+                {periods.map(p => (<SelectItem key={p} value={p}>{p}</SelectItem>))}
               </SelectContent>
             </Select>
             <Select value={compare} onValueChange={(v)=>{ setCompare(v); setComparePending(v !== "none"); }}>
               <SelectTrigger className="w-[160px]"><SelectValue placeholder="Compare" /></SelectTrigger>
-              <SelectContent className="max-h-80 overflow-y-auto">
+              <SelectContent>
                 <SelectItem value="none">No Compare</SelectItem>
                 {compareOptions.map(p => (<SelectItem key={p} value={p}>{p}</SelectItem>))}
               </SelectContent>
@@ -310,21 +300,21 @@ const compareOn = compare !== "none" && hasDelta;
         <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
           <Select value={area} onValueChange={setArea}>
             <SelectTrigger className="w-full"><SelectValue placeholder="Area" /></SelectTrigger>
-            <SelectContent className="max-h-80 overflow-y-auto">
+            <SelectContent>
               <SelectItem value="all">All Area</SelectItem>
               {areas.map(a => (<SelectItem key={a} value={a}>{a}</SelectItem>))}
             </SelectContent>
           </Select>
           <Select value={venueType} onValueChange={setVenueType}>
             <SelectTrigger className="w-full"><SelectValue placeholder="Venue Type" /></SelectTrigger>
-            <SelectContent className="max-h-80 overflow-y-auto">
+            <SelectContent>
               <SelectItem value="all">All Types</SelectItem>
               {venueTypes.map(v => (<SelectItem key={v} value={v}>{v}</SelectItem>))}
             </SelectContent>
           </Select>
           <Select value={io} onValueChange={setIo}>
             <SelectTrigger className="w-full"><SelectValue placeholder="Indoor/Outdoor" /></SelectTrigger>
-            <SelectContent className="max-h-80 overflow-y-auto">
+            <SelectContent>
               <SelectItem value="all">Indoor & Outdoor</SelectItem>
               <SelectItem value="indoor">Indoor</SelectItem>
               <SelectItem value="semi-outdoor">Semi-Outdoor</SelectItem>
@@ -333,7 +323,7 @@ const compareOn = compare !== "none" && hasDelta;
           </Select>
           <Select value={sortBy} onValueChange={setSortBy}>
             <SelectTrigger className="w-full"><SelectValue placeholder="Sort" /></SelectTrigger>
-            <SelectContent className="max-h-80 overflow-y-auto">
+            <SelectContent>
               <SelectItem value="foto_desc">Sort: Foto (desc)</SelectItem>
               <SelectItem value="unlock_desc">Sort: Unlock (desc)</SelectItem>
               <SelectItem value="print_desc">Sort: Print (desc)</SelectItem>
