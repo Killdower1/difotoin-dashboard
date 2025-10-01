@@ -1,7 +1,7 @@
-﻿import "./globals.css";
+import "./globals.css";
 
 export const metadata = {
-  title: "Difotoin — Location Review Dashboard",
+  title: "Difotoin - Location Review Dashboard",
   description: "Price-agnostic placement analytics",
 };
 

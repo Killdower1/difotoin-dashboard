@@ -26,6 +26,8 @@
     "@types/react": "19.1.13",
     "better-sqlite3": "^12.4.1",
     "electron-to-chromium": "^1.5.222",
+    "globby": "^15.0.0",
+    "iconv-lite": "^0.7.0",
     "prisma": "^6.16.2",
     "tsx": "^4.20.6",
     "typescript": "^5.5.4"

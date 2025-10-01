@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React,{  useMemo, useState, useEffect , useRef } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -42,7 +42,7 @@ type OutletRow = {
   print?: number;
   activeRatio?: number;     // 0..1
   weekendShare?: number;    // 0..1
-  eveningPeakShare?: number;// 0..1 (17–21)
+  eveningPeakShare?: number;// 0..1 (17-21)
   class?: OutletClass;
   classReason?: string;     // dari API classifier
   _prev?: PrevBlock;
@@ -51,11 +51,11 @@ type OutletRow = {
 
 function fmtPct(v?: number) {
   const n = Number(v ?? 0);
-  if (!isFinite(n) || n <= 0) return "–";
+  if (!isFinite(n) || n <= 0) return "-";
   return Math.round(n * 100) + "%";
 }
 function fmtPctSigned(v?: number|null) {
-  if (v == null || !isFinite(Number(v))) return "–";
+  if (v == null || !isFinite(Number(v))) return "-";
   const n = Number(v)*100;
   const s = n > 0 ? "+" : n < 0 ? "" : "";
   return s + Math.round(n) + "%";
@@ -79,7 +79,7 @@ const hourlyFotoData = Array.from({ length: 24 }, (_, h) => ({
 
 function Delta({v, isPct=false}: {v:number|null|undefined, isPct?:boolean}) {
   if (v == null || !isFinite(Number(v)) || Number(v) === 0) {
-    return <span className="inline-flex items-center gap-1 text-muted-foreground"><Minus className="h-3 w-3" />–</span>;
+    return <span className="inline-flex items-center gap-1 text-muted-foreground"><Minus className="h-3 w-3" />-</span>;
   }
   const n = Number(v);
   const up = n > 0;
@@ -274,27 +274,25 @@ const compareOn = compare !== "none" && hasDelta;
     <TooltipProvider>
       <div className="min-h-screen bg-background text-foreground p-4 md:p-6">
         {/* Header */}
-        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div className="flex items-center justify-between gap-3">
           <div>
-            <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">Difotoin — Location Review Dashboard</h1>
-            <p className="text-sm text-muted-foreground">Price-agnostic. Fokus evaluasi titik berdasarkan perilaku Foto → Unlock → Print.</p>
+            <h1 className="text-2xl md:text-3xl font-semibold tracking-tight">Difotoin - Location Review Dashboard</h1>
+            <p className="text-sm text-muted-foreground">Price-agnostic. Fokus evaluasi titik berdasarkan perilaku Foto  Unlock  Print.</p>
           </div>
           <div className="flex items-center gap-3">
             <Select value={period} onValueChange={setPeriod}>
-              <SelectTrigger className="w-[140px]"><SelectValue placeholder="Period" /></SelectTrigger>
-              <SelectContent className="max-h-80 overflow-y-auto">
+              <SelectTrigger className="h-10 py-0 w-[140px]"><SelectValue placeholder="Period" /></SelectTrigger>
+              <div className="max-h-80 overflow-y-auto"><SelectContent>
                 {periodsDesc.map(p => (<SelectItem key={p} value={p}>{p}</SelectItem>))}
-              </SelectContent>
-            </Select>
+              </SelectContent></div></Select>
             <Select value={compare} onValueChange={(v)=>{ setCompare(v); setComparePending(v !== "none"); }}>
-              <SelectTrigger className="w-[160px]"><SelectValue placeholder="Compare" /></SelectTrigger>
-              <SelectContent className="max-h-80 overflow-y-auto">
+              <SelectTrigger className="h-10 py-0 w-[160px]"><SelectValue placeholder="Compare" /></SelectTrigger>
+              <div className="max-h-80 overflow-y-auto"><SelectContent>
                 <SelectItem value="none">No Compare</SelectItem>
                 {compareOptions.map(p => (<SelectItem key={p} value={p}>{p}</SelectItem>))}
-              </SelectContent>
-            </Select>
+              </SelectContent></div></Select>
             <div className="hidden md:flex items-center gap-2">
-              <Input placeholder="Cari outlet…" value={query} onChange={(e) => setQuery(e.target.value)} className="w-[220px]" />
+              <Input placeholder="Cari outlet..." value={query} onChange={(e) => setQuery(e.target.value)} className="w-[220px]" />
             </div>
             <div className="flex items-center gap-2">
               <Sun className="h-4 w-4" />
@@ -309,44 +307,40 @@ const compareOn = compare !== "none" && hasDelta;
         {/* Filters */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
           <Select value={area} onValueChange={setArea}>
-            <SelectTrigger className="w-full"><SelectValue placeholder="Area" /></SelectTrigger>
-            <SelectContent className="max-h-80 overflow-y-auto">
+            <SelectTrigger className="h-10 py-0 w-full"><SelectValue placeholder="Area" /></SelectTrigger>
+            <div className="max-h-80 overflow-y-auto"><SelectContent>
               <SelectItem value="all">All Area</SelectItem>
               {areas.map(a => (<SelectItem key={a} value={a}>{a}</SelectItem>))}
-            </SelectContent>
-          </Select>
+            </SelectContent></div></Select>
           <Select value={venueType} onValueChange={setVenueType}>
-            <SelectTrigger className="w-full"><SelectValue placeholder="Venue Type" /></SelectTrigger>
-            <SelectContent className="max-h-80 overflow-y-auto">
+            <SelectTrigger className="h-10 py-0 w-full"><SelectValue placeholder="Venue Type" /></SelectTrigger>
+            <div className="max-h-80 overflow-y-auto"><SelectContent>
               <SelectItem value="all">All Types</SelectItem>
               {venueTypes.map(v => (<SelectItem key={v} value={v}>{v}</SelectItem>))}
-            </SelectContent>
-          </Select>
+            </SelectContent></div></Select>
           <Select value={io} onValueChange={setIo}>
-            <SelectTrigger className="w-full"><SelectValue placeholder="Indoor/Outdoor" /></SelectTrigger>
-            <SelectContent className="max-h-80 overflow-y-auto">
+            <SelectTrigger className="h-10 py-0 w-full"><SelectValue placeholder="Indoor/Outdoor" /></SelectTrigger>
+            <div className="max-h-80 overflow-y-auto"><SelectContent>
               <SelectItem value="all">Indoor & Outdoor</SelectItem>
               <SelectItem value="indoor">Indoor</SelectItem>
               <SelectItem value="semi-outdoor">Semi-Outdoor</SelectItem>
               <SelectItem value="outdoor">Outdoor</SelectItem>
-            </SelectContent>
-          </Select>
+            </SelectContent></div></Select>
           <Select value={sortBy} onValueChange={setSortBy}>
-            <SelectTrigger className="w-full"><SelectValue placeholder="Sort" /></SelectTrigger>
-            <SelectContent className="max-h-80 overflow-y-auto">
+            <SelectTrigger className="h-10 py-0 w-full"><SelectValue placeholder="Sort" /></SelectTrigger>
+            <div className="max-h-80 overflow-y-auto"><SelectContent>
               <SelectItem value="foto_desc">Sort: Foto (desc)</SelectItem>
               <SelectItem value="unlock_desc">Sort: Unlock (desc)</SelectItem>
               <SelectItem value="print_desc">Sort: Print (desc)</SelectItem>
               <SelectItem value="conv_desc">Sort: Conversion (desc)</SelectItem>
               <SelectItem value="active_desc">Sort: Active Ratio (desc)</SelectItem>
               {compareOn && <>
-                <SelectItem value="dFoto_desc">Sort: Δ Foto (desc)</SelectItem>
-                <SelectItem value="dFotoPct_desc">Sort: Δ Foto % (desc)</SelectItem>
+                <SelectItem value="dFoto_desc">Sort:  Foto (desc)</SelectItem>
+                <SelectItem value="dFotoPct_desc">Sort:  Foto % (desc)</SelectItem>
               </>}
-              <SelectItem value="outlet_asc">Sort: A–Z</SelectItem>
-            </SelectContent>
-          </Select>
-          <Button variant="outline" className="w-full"><Filter className="h-4 w-4 mr-2"/>Advanced Filters</Button>
+              <SelectItem value="outlet_asc">Sort: A-Z</SelectItem>
+            </SelectContent></div></Select>
+          <Button variant="outline" className="h-10 w-full"><Filter className="h-4 w-4 mr-2"/>Advanced Filters</Button>
         </div>
 
         {/* KPIs */}
@@ -387,7 +381,7 @@ const compareOn = compare !== "none" && hasDelta;
             </CardContent>
           </Card>
           <Card className="shadow-sm">
-            <CardHeader className="pb-2"><CardTitle className="text-sm font-medium">Evening Peak (17–21)</CardTitle></CardHeader>
+            <CardHeader className="pb-2"><CardTitle className="text-sm font-medium">Evening Peak (17-21)</CardTitle></CardHeader>
             <CardContent className="flex items-center gap-3">
               <Sun className="h-5 w-5"/>
               <div className="text-2xl font-bold">{fmtPct(kpi.evening)}</div>
@@ -400,12 +394,12 @@ const compareOn = compare !== "none" && hasDelta;
           <div className="xl:col-span-2">
             <Card className="shadow-sm">
               <CardHeader className="pb-0">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2">
                     <CardTitle>Outlet Leaderboard</CardTitle>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button size="sm" variant="outline" className="h-8">
+                        <Button size="sm" variant="outline" className="h-10 h-8">
                           <Info className="h-4 w-4 mr-2" /> Klasifikasi Info
                         </Button>
                       </DialogTrigger>
@@ -414,10 +408,10 @@ const compareOn = compare !== "none" && hasDelta;
     <DialogTitle>Aturan Klasifikasi (Bulanan, tanpa Active Ratio)</DialogTitle>
   </DialogHeader>
   {!T ? (
-    <div className="text-sm text-muted-foreground">Memuat ambang dari Settings…</div>
+    <div className="text-sm text-muted-foreground">Memuat ambang dari Settings...</div>
   ) : (
     <div className="mt-2 text-sm text-muted-foreground space-y-4">
-      <p>Conversion = <code>unlock / foto × 100%</code>. Semua angka di bawah diambil real-time dari <code>Settings</code> (/admin/classifier).</p>
+      <p>Conversion = <code>unlock / foto  100%</code>. Semua angka di bawah diambil real-time dari <code>Settings</code> (/admin/classifier).</p>
       <div className="mt-2 overflow-hidden rounded-md border">
         <table className="w-full text-sm">
           <thead className="bg-muted/50">
@@ -430,17 +424,17 @@ const compareOn = compare !== "none" && hasDelta;
             <tr>
               <td className="p-2 font-medium">Keeper</td>
               <td className="p-2">
-                Foto ≥ {T.CLASS_KEEPER_FOTO_MIN_A}<br/>
-                atau (Foto ≥ {T.CLASS_KEEPER_FOTO_MIN_B} &amp; Conv ≥ {T.CLASS_KEEPER_CONV_MIN_B}%)
+                Foto  {T.CLASS_KEEPER_FOTO_MIN_A}<br/>
+                atau (Foto  {T.CLASS_KEEPER_FOTO_MIN_B} &amp; Conv  {T.CLASS_KEEPER_CONV_MIN_B}%)
               </td>
             </tr>
             <tr>
               <td className="p-2 font-medium">Optimize Conversion</td>
-              <td className="p-2">Foto ≥ {T.CLASS_OPTIMIZE_FOTO_MIN} &amp; Conv &lt; {T.CLASS_OPTIMIZE_CONV_MAX}%</td>
+              <td className="p-2">Foto  {T.CLASS_OPTIMIZE_FOTO_MIN} &amp; Conv &lt; {T.CLASS_OPTIMIZE_CONV_MAX}%</td>
             </tr>
             <tr>
               <td className="p-2 font-medium">Relocate</td>
-              <td className="p-2">{T.CLASS_RELOCATE_FOTO_MIN} ≤ Foto &lt; {T.CLASS_RELOCATE_FOTO_MAX}</td>
+              <td className="p-2">{T.CLASS_RELOCATE_FOTO_MIN}  Foto &lt; {T.CLASS_RELOCATE_FOTO_MAX}</td>
             </tr>
             <tr>
               <td className="p-2 font-medium">Monitor</td>
@@ -475,15 +469,15 @@ const compareOn = compare !== "none" && hasDelta;
                         <TableHead>Area</TableHead>
                         <TableHead>Type</TableHead>
                         <TableHead className="text-right">Foto</TableHead>
-                        {compareOn && <TableHead className="text-right">Δ Foto</TableHead>}
+                        {compareOn && <TableHead className="text-right"> Foto</TableHead>}
                         <TableHead className="text-right">Unlock</TableHead>
-                        {compareOn && <TableHead className="text-right">Δ Unlock</TableHead>}
+                        {compareOn && <TableHead className="text-right"> Unlock</TableHead>}
                         <TableHead className="text-right">Print</TableHead>
-                        {compareOn && <TableHead className="text-right">Δ Print</TableHead>}
+                        {compareOn && <TableHead className="text-right"> Print</TableHead>}
                         <TableHead className="text-right">Conv</TableHead>
-                        {compareOn && <TableHead className="text-right">Δ Conv</TableHead>}
+                        {compareOn && <TableHead className="text-right"> Conv</TableHead>}
                         <TableHead className="text-right">Active</TableHead>
-                        {compareOn && <TableHead className="text-right">Δ Active</TableHead>}
+                        {compareOn && <TableHead className="text-right"> Active</TableHead>}
                         <TableHead className="text-right">Weekend</TableHead>
                         <TableHead>Status</TableHead>
                         <TableHead className="text-right">Action</TableHead>
@@ -527,13 +521,13 @@ const compareOn = compare !== "none" && hasDelta;
                   </Table>
                 </div>
 
-                <div className="flex items-center justify-between mt-2 text-xs text-muted-foreground">
+                <div className="flex items-center justify-between gap-3">
                   <span>Menampilkan {Math.min(limit, filtered.length)} dari {filtered.length} outlet.</span>
                   <div className="space-x-2">
-                    <Button variant="outline" className="h-5 p-0" onClick={()=>setLimit(20)}>20</Button>
-                    <Button variant="outline" className="h-5 p-0" onClick={()=>setLimit(50)}>50</Button>
-                    <Button variant="outline" className="h-5 p-0" onClick={()=>setLimit(100)}>100</Button>
-                    <Button variant="outline" className="h-5 p-0" onClick={()=>setLimit(99999)}>All</Button>
+                    <Button variant="outline" className="h-10 h-5 p-0" onClick={()=>setLimit(20)}>20</Button>
+                    <Button variant="outline" className="h-10 h-5 p-0" onClick={()=>setLimit(50)}>50</Button>
+                    <Button variant="outline" className="h-10 h-5 p-0" onClick={()=>setLimit(100)}>100</Button>
+                    <Button variant="outline" className="h-10 h-5 p-0" onClick={()=>setLimit(99999)}>All</Button>
                   </div>
                 </div>
               </CardContent>
