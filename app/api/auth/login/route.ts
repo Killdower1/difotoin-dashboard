@@ -2,6 +2,7 @@
 import { readFile, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { verifyPassword, signToken } from "@/lib/auth";
+import { isSecureRequest } from "@/lib/secure-cookie";
 
 export async function POST(req: NextRequest){
   const { username, password } = await req.json().catch(()=>({}));
@@ -20,6 +21,6 @@ export async function POST(req: NextRequest){
   const token = signToken({ sub: u.username, role: u.role || "admin", exp });
 
   const res = NextResponse.json({ ok:true, user:{ username: u.username, role: u.role||"admin" } });
-  res.cookies.set("session", token, { httpOnly:true, sameSite:"lax", secure:false, path:"/" });
+  res.cookies.set("session", token, { httpOnly:true, sameSite:"lax", secure:isSecureRequest(req), path:"/" });
   return res;
 }

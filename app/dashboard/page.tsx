@@ -461,11 +461,11 @@ const compareOn = compare !== "none" && hasDelta;
                 </div>
               </CardHeader>
               <CardContent>
-                <div className="overflow-auto rounded-md border mt-3">
-                  <Table>
+                <div className="mt-3 w-full overflow-x-auto rounded-md border">
+                  <Table className="min-w-[1080px] table-auto">
                     <TableHeader>
                       <TableRow>
-                        <TableHead className="w-[20%]">Outlet</TableHead>
+                        <TableHead className="w-[220px] whitespace-nowrap">Outlet</TableHead>
                         <TableHead>Area</TableHead>
                         <TableHead>Type</TableHead>
                         <TableHead className="text-right">Foto</TableHead>
@@ -489,7 +489,7 @@ const compareOn = compare !== "none" && hasDelta;
                         return (
                           <TableRow key={o.outlet}>
                             <TableCell>
-                              <div className="font-medium">{o.outlet}</div>
+                              <div className="font-medium whitespace-nowrap">{o.outlet}</div>
                               <div className="text-xs text-muted-foreground">{o.indoorOutdoor||""}</div>
                             </TableCell>
                             <TableCell>{o.area||""}</TableCell>
@@ -613,7 +613,6 @@ function buildWeekendAgg(list: OutletRow[]) {
   const weekend = 1 - weekday;
   return [ { label: "All Outlets (filtered)", weekday, weekend } ];
 }
-
 
 
 

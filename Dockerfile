@@ -9,6 +9,7 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV DATABASE_URL=file:/app/prisma/data.db
 # pastikan direktori ini selalu ada supaya tahap runner bisa COPY
 RUN mkdir -p public data
 RUN npx prisma generate
@@ -18,14 +19,16 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3000
+ENV DATABASE_URL=file:/app/prisma/data.db
 RUN apk add --no-cache tzdata \
  && cp /usr/share/zoneinfo/Asia/Jakarta /etc/localtime \
  && echo "Asia/Jakarta" > /etc/timezone \
- && mkdir -p /app/data
+ && mkdir -p /app/data /app/prisma
 USER node
 COPY --chown=node:node --from=builder /app/.next/standalone ./
 COPY --chown=node:node --from=builder /app/.next/static ./.next/static
 COPY --chown=node:node --from=builder /app/public ./public
 COPY --chown=node:node --from=builder /app/data ./data
+COPY --chown=node:node --from=builder /app/prisma ./prisma
 EXPOSE 3000
 CMD ["node","server.js"]

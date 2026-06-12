@@ -2,6 +2,7 @@
 import { mkdir, rename, rm, cp, stat } from "node:fs/promises";
 import path from "node:path";
 import { verifyToken } from "@/lib/auth";
+import { isSecureRequest } from "@/lib/secure-cookie";
 
 async function exists(p: string){ try{ await stat(p); return true; } catch{ return false; } }
 function z(n:number){ return String(n).padStart(2,"0"); }
@@ -24,7 +25,7 @@ export async function POST(req: NextRequest){
 
   if(!(await exists(dataDir))){
     const resEmpty = NextResponse.json({ ok:true, note:"data/ not found, nothing to reset", redirect:"/login" });
-    resEmpty.cookies.set("session","", { httpOnly:true, sameSite:"lax", secure:false, path:"/", maxAge:0 });
+    resEmpty.cookies.set("session","", { httpOnly:true, sameSite:"lax", secure:isSecureRequest(req), path:"/", maxAge:0 });
     return resEmpty;
   }
 
@@ -42,6 +43,6 @@ export async function POST(req: NextRequest){
   }
 
   const res = NextResponse.json({ ok:true, backupPath: dest.replace(root,"").replace(/\\\\/g,"/"), redirect:"/login" });
-  res.cookies.set("session","", { httpOnly:true, sameSite:"lax", secure:false, path:"/", maxAge:0 });
+  res.cookies.set("session","", { httpOnly:true, sameSite:"lax", secure:isSecureRequest(req), path:"/", maxAge:0 });
   return res;
 }

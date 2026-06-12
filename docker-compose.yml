@@ -7,7 +7,29 @@ services:
       - NODE_ENV=production
       - TZ=Asia/Jakarta
       - PORT=3000
+      - DATABASE_URL=file:/app/prisma/data.db
     volumes:
       - ./data:/app/data:Z    # penting di Alma/RHEL (SELinux)
+      - ./prisma/data.db:/app/prisma/data.db:Z
+    expose:
+      - "3000"
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: difotoin-dashboard-https
+    restart: unless-stopped
+    depends_on:
+      - app
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:-localhost}
     ports:
-      - "8080:3000"
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro,Z
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

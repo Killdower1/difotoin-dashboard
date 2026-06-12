@@ -10,6 +10,7 @@ services:
     environment:
       NODE_ENV: development
       TZ: Asia/Jakarta
+      DATABASE_URL: file:/app/prisma/data.db
       CHOKIDAR_USEPOLLING: "1"
       WATCHPACK_POLLING: "true"
     volumes:
