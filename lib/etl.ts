@@ -7,7 +7,6 @@ export type OutletMetric = {
   area?: string; venueType?: string; indoorOutdoor?: string;
   foto: number; unlock: number; print: number;
   activeRatio: number; weekendShare: number; eveningPeakShare: number;
-  class: string;
   hourProfile: number[]; // 0..23 foto per jam
 };
 
@@ -108,22 +107,11 @@ export function aggregateAll(evts: Event[]): {
     return { outlet, foto: v.foto, unlock: v.unlock, print: v.print, activeRatio, weekendShare, eveningPeakShare, hourProfile: v.hours } as any;
   });
 
-  // klasifikasi (quantile 60/40)
-  const fotos = rows.map((r:any)=>r.foto).sort((a:number,b:number)=>a-b);
-  const convs = rows.map((r:any)=> (r.foto>0? r.unlock/r.foto : 0)).sort((a:number,b:number)=>a-b);
-  const q = (arr:number[], p:number)=> arr.length ? arr[Math.min(arr.length-1, Math.floor(p*(arr.length-1)))] : 0;
-  const fotoHigh = q(fotos, 0.60), fotoLow = q(fotos, 0.40);
-  const convHigh = q(convs, 0.60), convLow = q(convs, 0.40);
-
-  const outlets: OutletMetric[] = rows.map((r:any) => {
-    const conv = r.foto>0? r.unlock/r.foto : 0;
-    let label = "monitor";
-    if (r.foto >= fotoHigh && conv >= convHigh) label = "keeper";
-    else if (r.foto >= fotoHigh && conv <= convLow) label = "optimize-conversion";
-    else if (r.foto <= fotoLow && conv <= convLow) label = "relocate-candidate";
-    else if (r.activeRatio < 0.5) label = "check-uptime/ops";
-    return { ...r, class: label };
-  });
+  const outlets: OutletMetric[] = rows.map((r:any) => ({
+    outlet: r.outlet, foto: r.foto, unlock: r.unlock, print: r.print,
+    activeRatio: r.activeRatio, weekendShare: r.weekendShare, eveningPeakShare: r.eveningPeakShare,
+    hourProfile: r.hourProfile,
+  }));
 
   const dailyByOutlet: Record<string, Array<{date:string,foto:number,unlock:number,print:number}>> = {};
   for (const [name, v] of byOutlet.entries()) {

@@ -29,14 +29,14 @@ export function useSettings() {
 
   const S = useMemo(() => ({
     uptime_ratio_min:            map.uptime_ratio_min            ?? 65,
-    keeper_foto_min:             map.keeper_foto_min             ?? 1000,
-    keeper_alt_foto_min:         map.keeper_alt_foto_min         ?? 600,
-    keeper_alt_conversion_min:   map.keeper_alt_conversion_min   ?? 40,
+    keeper_foto_min:             map.CLASS_KEEPER_FOTO_MIN_A     ?? 1000,
+    keeper_alt_foto_min:         map.CLASS_KEEPER_FOTO_MIN_B     ?? 600,
+    keeper_alt_conversion_min:   map.CLASS_KEEPER_CONV_MIN_B     ?? 40,
     keeper_alt_active_ratio_min: map.keeper_alt_active_ratio_min ?? 80,
-    optimize_foto_min:           map.optimize_foto_min           ?? 600,
-    optimize_conversion_max:     map.optimize_conversion_max     ?? 30,
-    relocate_foto_min:           map.relocate_foto_min           ?? 1,
-    relocate_foto_max:           map.relocate_foto_max           ?? 200,
+    optimize_foto_min:           map.CLASS_OPTIMIZE_FOTO_MIN     ?? 600,
+    optimize_conversion_max:     map.CLASS_OPTIMIZE_CONV_MAX     ?? 30,
+    relocate_foto_min:           map.CLASS_RELOCATE_FOTO_MIN     ?? 1,
+    relocate_foto_max:           map.CLASS_RELOCATE_FOTO_MAX     ?? 200,
   }), [map]);
 
   return { S, loading, error };

@@ -1,10 +1,13 @@
 ﻿import { readFile } from "fs/promises";
 import path from "node:path";
+import { loadThresholds, classifyOutletSync } from "@/lib/classifier";
 
 export async function GET(req: Request, ctx: { params: { slug: string } }) {
   const url = new URL(req.url);
   const period = url.searchParams.get("period") || "latest";
   const name = decodeURIComponent(ctx.params.slug);
+
+  await loadThresholds(); // warm cache
 
   const root = process.cwd();
   async function loadJson(p:string){ try{ const b=await readFile(p,"utf8"); return JSON.parse(b);}catch{ return null; } }
@@ -66,5 +69,12 @@ export async function GET(req: Request, ctx: { params: { slug: string } }) {
   const m = masters.find(m=> String(m.name).trim() === canonical) || null;
   const loc = locs.find(l=> String(l.name).trim() === canonical) || null;
 
-  return Response.json({ ...agg, area: m?.area, venueType: m?.venueType, indoorOutdoor: m?.indoorOutdoor, location: loc, dailySeries }, { status: 200 });
+  // Re-classify menggunakan classifier.ts (single source of truth)
+  const foto = agg.foto;
+  const unlock = agg.unlock;
+  const convPct = foto > 0 ? (unlock / foto) * 100 : 0;
+  const res = classifyOutletSync({ outlet: canonical, foto, unlock, conversion: convPct });
+  agg.class = res.cls;
+
+  return Response.json({ ...agg, area: m?.area, venueType: m?.venueType, indoorOutdoor: m?.indoorOutdoor, location: loc, dailySeries, classReason: res.reason }, { status: 200 });
 }
